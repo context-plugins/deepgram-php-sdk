@@ -16,7 +16,7 @@ Encoding - mulaw. Supported container - wav (default), or no container.
 ## Example
 
 ```php
-use RestApiLib\Models\V2SpeakPostParametersContainer2;
+use DeepgramLib\Models\V2SpeakPostParametersContainer2;
 
 $v2SpeakPostParametersContainer2 = V2SpeakPostParametersContainer2::WAV;
 ```

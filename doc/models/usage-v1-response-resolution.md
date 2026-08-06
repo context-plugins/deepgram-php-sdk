@@ -18,8 +18,8 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\UsageV1ResponseResolutionBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\UsageV1ResponseResolutionBuilder;
+use DeepgramLib\ApiHelper;
 
 $usageV1ResponseResolution = UsageV1ResponseResolutionBuilder::init()
     ->units('units8')

@@ -19,8 +19,8 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\ListenV1ResponseResultsChannelsItemsAlternativesItemsSummariesItemsBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\ListenV1ResponseResultsChannelsItemsAlternativesItemsSummariesItemsBuilder;
+use DeepgramLib\ApiHelper;
 
 $listenV1ResponseResultsChannelsItemsAlternativesItemsSummariesItems = ListenV1ResponseResultsChannelsItemsAlternativesItemsSummariesItemsBuilder::init()
     ->summary('summary8')

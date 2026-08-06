@@ -18,10 +18,10 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\ListModelsV1ResponseBuilder;
-use RestApiLib\Models\Builders\ListModelsV1ResponseSttModelsBuilder;
-use RestApiLib\ApiHelper;
-use RestApiLib\Models\Builders\ListModelsV1ResponseTtsModelsBuilder;
+use DeepgramLib\Models\Builders\ListModelsV1ResponseBuilder;
+use DeepgramLib\Models\Builders\ListModelsV1ResponseSttModelsBuilder;
+use DeepgramLib\ApiHelper;
+use DeepgramLib\Models\Builders\ListModelsV1ResponseTtsModelsBuilder;
 
 $listModelsV1Response = ListModelsV1ResponseBuilder::init()
     ->stt(

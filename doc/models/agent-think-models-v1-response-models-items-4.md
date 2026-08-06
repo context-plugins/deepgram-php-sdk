@@ -21,8 +21,8 @@ AWS Bedrock models (custom models accepted)
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\AgentThinkModelsV1ResponseModelsItems4Builder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\AgentThinkModelsV1ResponseModelsItems4Builder;
+use DeepgramLib\ApiHelper;
 
 $agentThinkModelsV1ResponseModelsItems4 = AgentThinkModelsV1ResponseModelsItems4Builder::init(
     'id0',

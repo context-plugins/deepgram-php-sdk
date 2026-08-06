@@ -16,7 +16,7 @@
 ## Example
 
 ```php
-use RestApiLib\Models\V1ListenPostParametersDiarizeModel;
+use DeepgramLib\Models\V1ListenPostParametersDiarizeModel;
 
 $v1ListenPostParametersDiarizeModel = V1ListenPostParametersDiarizeModel::LATEST;
 ```

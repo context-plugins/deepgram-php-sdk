@@ -19,12 +19,12 @@ Output whenever `topics=true` is used
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\SharedTopicsBuilder;
-use RestApiLib\Models\Builders\SharedTopicsResultsBuilder;
-use RestApiLib\Models\Builders\SharedTopicsResultsTopicsBuilder;
-use RestApiLib\Models\Builders\SharedTopicsResultsTopicsSegmentsItemsBuilder;
-use RestApiLib\Models\Builders\SharedTopicsResultsTopicsSegmentsItemsTopicsItemsBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\SharedTopicsBuilder;
+use DeepgramLib\Models\Builders\SharedTopicsResultsBuilder;
+use DeepgramLib\Models\Builders\SharedTopicsResultsTopicsBuilder;
+use DeepgramLib\Models\Builders\SharedTopicsResultsTopicsSegmentsItemsBuilder;
+use DeepgramLib\Models\Builders\SharedTopicsResultsTopicsSegmentsItemsTopicsItemsBuilder;
+use DeepgramLib\ApiHelper;
 
 $sharedTopics = SharedTopicsBuilder::init()
     ->results(

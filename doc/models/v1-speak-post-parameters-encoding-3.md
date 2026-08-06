@@ -16,7 +16,7 @@ Encoding - alaw. Similar to mulaw but used in international telephony.
 ## Example
 
 ```php
-use RestApiLib\Models\V1SpeakPostParametersEncoding3;
+use DeepgramLib\Models\V1SpeakPostParametersEncoding3;
 
 $v1SpeakPostParametersEncoding3 = V1SpeakPostParametersEncoding3::ALAW;
 ```

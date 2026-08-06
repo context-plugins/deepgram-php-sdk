@@ -16,7 +16,7 @@ Encoding - opus. High-compression audio format optimized for real-time communica
 ## Example
 
 ```php
-use RestApiLib\Models\V2SpeakPostParametersEncoding5;
+use DeepgramLib\Models\V2SpeakPostParametersEncoding5;
 
 $v2SpeakPostParametersEncoding5 = V2SpeakPostParametersEncoding5::OPUS;
 ```

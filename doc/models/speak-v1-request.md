@@ -19,8 +19,8 @@ Request body for text-to-speech conversion
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\SpeakV1RequestBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\SpeakV1RequestBuilder;
+use DeepgramLib\ApiHelper;
 
 $speakV1Request = SpeakV1RequestBuilder::init(
     'text2'

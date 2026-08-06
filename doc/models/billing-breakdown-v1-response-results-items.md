@@ -18,10 +18,10 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\BillingBreakdownV1ResponseResultsItemsBuilder;
-use RestApiLib\Models\Builders\BillingBreakdownV1ResponseResultsItemsGroupingBuilder;
-use RestApiLib\Utils\DateTimeHelper;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\BillingBreakdownV1ResponseResultsItemsBuilder;
+use DeepgramLib\Models\Builders\BillingBreakdownV1ResponseResultsItemsGroupingBuilder;
+use DeepgramLib\Utils\DateTimeHelper;
+use DeepgramLib\ApiHelper;
 
 $billingBreakdownV1ResponseResultsItems = BillingBreakdownV1ResponseResultsItemsBuilder::init(
     151.78,

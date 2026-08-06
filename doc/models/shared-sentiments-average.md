@@ -18,8 +18,8 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\SharedSentimentsAverageBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\SharedSentimentsAverageBuilder;
+use DeepgramLib\ApiHelper;
 
 $sharedSentimentsAverage = SharedSentimentsAverageBuilder::init()
     ->sentiment('sentiment2')

@@ -20,8 +20,8 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\ListenV1ResponseResultsChannelsItemsAlternativesItemsWordsItemsBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\ListenV1ResponseResultsChannelsItemsAlternativesItemsWordsItemsBuilder;
+use DeepgramLib\ApiHelper;
 
 $listenV1ResponseResultsChannelsItemsAlternativesItemsWordsItems = ListenV1ResponseResultsChannelsItemsAlternativesItemsWordsItemsBuilder::init()
     ->word('word0')

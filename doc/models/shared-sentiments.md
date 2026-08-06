@@ -20,10 +20,10 @@ Output whenever `sentiment=true` is used
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\SharedSentimentsBuilder;
-use RestApiLib\Models\Builders\SharedSentimentsSegmentsItemsBuilder;
-use RestApiLib\ApiHelper;
-use RestApiLib\Models\Builders\SharedSentimentsAverageBuilder;
+use DeepgramLib\Models\Builders\SharedSentimentsBuilder;
+use DeepgramLib\Models\Builders\SharedSentimentsSegmentsItemsBuilder;
+use DeepgramLib\ApiHelper;
+use DeepgramLib\Models\Builders\SharedSentimentsAverageBuilder;
 
 $sharedSentiments = SharedSentimentsBuilder::init()
     ->segments(

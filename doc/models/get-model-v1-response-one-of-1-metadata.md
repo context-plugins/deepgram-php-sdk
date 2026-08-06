@@ -23,8 +23,8 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\GetModelV1ResponseOneOf1MetadataBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\GetModelV1ResponseOneOf1MetadataBuilder;
+use DeepgramLib\ApiHelper;
 
 $getModelV1ResponseOneOf1Metadata = GetModelV1ResponseOneOf1MetadataBuilder::init()
     ->accent('accent4')

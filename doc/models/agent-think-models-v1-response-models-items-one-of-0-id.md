@@ -23,7 +23,7 @@ The unique identifier of the OpenAI model
 ## Example
 
 ```php
-use RestApiLib\Models\AgentThinkModelsV1ResponseModelsItemsOneOf0Id;
+use DeepgramLib\Models\AgentThinkModelsV1ResponseModelsItemsOneOf0Id;
 
 $agentThinkModelsV1ResponseModelsItemsOneOf0Id = AgentThinkModelsV1ResponseModelsItemsOneOf0Id::GPT5;
 ```

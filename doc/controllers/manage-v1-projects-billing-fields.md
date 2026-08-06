@@ -13,23 +13,19 @@ $manageV1ProjectsBillingFieldsApi = $client->getManageV1ProjectsBillingFieldsApi
 
 Lists the accessors, deployment types, tags, and line items used for billing data in the specified time period. Use this endpoint if you want to filter your results from the Billing Breakdown endpoint and want to know what filters are available.
 
-:information_source: **Note** This endpoint does not require authentication.
-
 ```php
-function mList(
-    string $projectId,
-    string $authorization,
-    ?\DateTime $start = null,
-    ?\DateTime $end = null
-): ApiResponse
+function mList(string $projectId, ?\DateTime $start = null, ?\DateTime $end = null): ApiResponse
 ```
+
+## Authentication
+
+This endpoint requires [ApiKeyAuth](../../doc/auth/custom-header-signature.md)
 
 ## Parameters
 
 | Parameter | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `projectId` | `string` | Template, Required | The unique identifier of the project |
-| `authorization` | `string` | Header, Required | Use `Authorization: Token <API_KEY>`<br>Example: `Authorization: Token 12345abcdef` |
 | `start` | `?DateTime` | Query, Optional | Start date of the requested date range. Format accepted is YYYY-MM-DD |
 | `end` | `?DateTime` | Query, Optional | End date of the requested date range. Format accepted is YYYY-MM-DD |
 
@@ -44,13 +40,8 @@ This method returns an [`ApiResponse`](../../doc/api-response.md) instance. The 
 ```php
 $projectId = 'project_id6';
 
-$authorization = 'Authorization8';
-
 $manageV1ProjectsBillingFieldsApi = $client->getManageV1ProjectsBillingFieldsApi();
-$apiResponse = $manageV1ProjectsBillingFieldsApi->mList(
-    $projectId,
-    $authorization
-);
+$apiResponse = $manageV1ProjectsBillingFieldsApi->mList($projectId);
 
 // Extracting response status code
 var_dump($apiResponse->getStatusCode());

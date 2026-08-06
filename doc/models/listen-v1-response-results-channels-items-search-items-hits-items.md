@@ -20,8 +20,8 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\ListenV1ResponseResultsChannelsItemsSearchItemsHitsItemsBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\ListenV1ResponseResultsChannelsItemsSearchItemsHitsItemsBuilder;
+use DeepgramLib\ApiHelper;
 
 $listenV1ResponseResultsChannelsItemsSearchItemsHitsItems = ListenV1ResponseResultsChannelsItemsSearchItemsHitsItemsBuilder::init()
     ->confidence(94.16)

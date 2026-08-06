@@ -23,8 +23,8 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\ListModelsV1ResponseTtsModelsMetadataBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\ListModelsV1ResponseTtsModelsMetadataBuilder;
+use DeepgramLib\ApiHelper;
 
 $listModelsV1ResponseTtsModelsMetadata = ListModelsV1ResponseTtsModelsMetadataBuilder::init()
     ->accent('accent4')

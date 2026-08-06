@@ -20,9 +20,9 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\ListBillingFieldsV1ResponseBuilder;
-use RestApiLib\Models\ListBillingFieldsV1ResponseDeploymentsItems;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\ListBillingFieldsV1ResponseBuilder;
+use DeepgramLib\Models\ListBillingFieldsV1ResponseDeploymentsItems;
+use DeepgramLib\ApiHelper;
 
 $listBillingFieldsV1Response = ListBillingFieldsV1ResponseBuilder::init()
     ->accessors(

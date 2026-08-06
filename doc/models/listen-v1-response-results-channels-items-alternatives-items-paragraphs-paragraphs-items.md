@@ -21,9 +21,9 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\ListenV1ResponseResultsChannelsItemsAlternativesItemsParagraphsParagraphsItemsBuilder;
-use RestApiLib\Models\Builders\ListenV1ResponseResultsChannelsItemsAlternativesItemsParagraphsParagraphsItemsSentencesItemsBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\ListenV1ResponseResultsChannelsItemsAlternativesItemsParagraphsParagraphsItemsBuilder;
+use DeepgramLib\Models\Builders\ListenV1ResponseResultsChannelsItemsAlternativesItemsParagraphsParagraphsItemsSentencesItemsBuilder;
+use DeepgramLib\ApiHelper;
 
 $listenV1ResponseResultsChannelsItemsAlternativesItemsParagraphsParagraphsItems = ListenV1ResponseResultsChannelsItemsAlternativesItemsParagraphsParagraphsItemsBuilder::init()
     ->sentences(

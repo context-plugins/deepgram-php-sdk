@@ -14,7 +14,7 @@
 ## Example
 
 ```php
-use RestApiLib\Models\V2SpeakPostParametersPriority;
+use DeepgramLib\Models\V2SpeakPostParametersPriority;
 
 $v2SpeakPostParametersPriority = V2SpeakPostParametersPriority::LOW;
 ```

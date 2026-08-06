@@ -29,13 +29,13 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\ListenV1ResponseMetadataBuilder;
-use RestApiLib\Utils\DateTimeHelper;
-use RestApiLib\ApiHelper;
-use RestApiLib\Models\Builders\ListenV1ResponseMetadataSummaryInfoBuilder;
-use RestApiLib\Models\Builders\ListenV1ResponseMetadataSentimentInfoBuilder;
-use RestApiLib\Models\Builders\ListenV1ResponseMetadataTopicsInfoBuilder;
-use RestApiLib\Models\Builders\ListenV1ResponseMetadataIntentsInfoBuilder;
+use DeepgramLib\Models\Builders\ListenV1ResponseMetadataBuilder;
+use DeepgramLib\Utils\DateTimeHelper;
+use DeepgramLib\ApiHelper;
+use DeepgramLib\Models\Builders\ListenV1ResponseMetadataSummaryInfoBuilder;
+use DeepgramLib\Models\Builders\ListenV1ResponseMetadataSentimentInfoBuilder;
+use DeepgramLib\Models\Builders\ListenV1ResponseMetadataTopicsInfoBuilder;
+use DeepgramLib\Models\Builders\ListenV1ResponseMetadataIntentsInfoBuilder;
 
 $listenV1ResponseMetadata = ListenV1ResponseMetadataBuilder::init(
     '00000a0c-0000-0000-0000-000000000000',

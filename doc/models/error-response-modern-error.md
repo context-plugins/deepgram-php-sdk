@@ -20,8 +20,8 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\ErrorResponseModernErrorBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\ErrorResponseModernErrorBuilder;
+use DeepgramLib\ApiHelper;
 
 $errorResponseModernError = ErrorResponseModernErrorBuilder::init()
     ->category('category6')

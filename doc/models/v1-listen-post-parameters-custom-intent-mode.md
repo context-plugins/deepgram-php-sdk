@@ -15,7 +15,7 @@
 ## Example
 
 ```php
-use RestApiLib\Models\V1ListenPostParametersCustomIntentMode;
+use DeepgramLib\Models\V1ListenPostParametersCustomIntentMode;
 
 $v1ListenPostParametersCustomIntentMode = V1ListenPostParametersCustomIntentMode::EXTENDED;
 ```

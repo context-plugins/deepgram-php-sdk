@@ -20,30 +20,30 @@ The standard text response
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\ReadV1ResponseBuilder;
-use RestApiLib\Models\Builders\ReadV1ResponseMetadataBuilder;
-use RestApiLib\Models\Builders\ReadV1ResponseMetadataMetadataBuilder;
-use RestApiLib\Utils\DateTimeHelper;
-use RestApiLib\Models\Builders\ReadV1ResponseMetadataMetadataSummaryInfoBuilder;
-use RestApiLib\ApiHelper;
-use RestApiLib\Models\Builders\ReadV1ResponseMetadataMetadataSentimentInfoBuilder;
-use RestApiLib\Models\Builders\ReadV1ResponseResultsBuilder;
-use RestApiLib\Models\Builders\ReadV1ResponseResultsSummaryBuilder;
-use RestApiLib\Models\Builders\ReadV1ResponseResultsSummaryResultsBuilder;
-use RestApiLib\Models\Builders\ReadV1ResponseResultsSummaryResultsSummaryBuilder;
-use RestApiLib\Models\Builders\SharedTopicsBuilder;
-use RestApiLib\Models\Builders\SharedTopicsResultsBuilder;
-use RestApiLib\Models\Builders\SharedTopicsResultsTopicsBuilder;
-use RestApiLib\Models\Builders\SharedTopicsResultsTopicsSegmentsItemsBuilder;
-use RestApiLib\Models\Builders\SharedTopicsResultsTopicsSegmentsItemsTopicsItemsBuilder;
-use RestApiLib\Models\Builders\SharedIntentsBuilder;
-use RestApiLib\Models\Builders\SharedIntentsResultsBuilder;
-use RestApiLib\Models\Builders\SharedIntentsResultsIntentsBuilder;
-use RestApiLib\Models\Builders\SharedIntentsResultsIntentsSegmentsItemsBuilder;
-use RestApiLib\Models\Builders\SharedIntentsResultsIntentsSegmentsItemsIntentsItemsBuilder;
-use RestApiLib\Models\Builders\SharedSentimentsBuilder;
-use RestApiLib\Models\Builders\SharedSentimentsSegmentsItemsBuilder;
-use RestApiLib\Models\Builders\SharedSentimentsAverageBuilder;
+use DeepgramLib\Models\Builders\ReadV1ResponseBuilder;
+use DeepgramLib\Models\Builders\ReadV1ResponseMetadataBuilder;
+use DeepgramLib\Models\Builders\ReadV1ResponseMetadataMetadataBuilder;
+use DeepgramLib\Utils\DateTimeHelper;
+use DeepgramLib\Models\Builders\ReadV1ResponseMetadataMetadataSummaryInfoBuilder;
+use DeepgramLib\ApiHelper;
+use DeepgramLib\Models\Builders\ReadV1ResponseMetadataMetadataSentimentInfoBuilder;
+use DeepgramLib\Models\Builders\ReadV1ResponseResultsBuilder;
+use DeepgramLib\Models\Builders\ReadV1ResponseResultsSummaryBuilder;
+use DeepgramLib\Models\Builders\ReadV1ResponseResultsSummaryResultsBuilder;
+use DeepgramLib\Models\Builders\ReadV1ResponseResultsSummaryResultsSummaryBuilder;
+use DeepgramLib\Models\Builders\SharedTopicsBuilder;
+use DeepgramLib\Models\Builders\SharedTopicsResultsBuilder;
+use DeepgramLib\Models\Builders\SharedTopicsResultsTopicsBuilder;
+use DeepgramLib\Models\Builders\SharedTopicsResultsTopicsSegmentsItemsBuilder;
+use DeepgramLib\Models\Builders\SharedTopicsResultsTopicsSegmentsItemsTopicsItemsBuilder;
+use DeepgramLib\Models\Builders\SharedIntentsBuilder;
+use DeepgramLib\Models\Builders\SharedIntentsResultsBuilder;
+use DeepgramLib\Models\Builders\SharedIntentsResultsIntentsBuilder;
+use DeepgramLib\Models\Builders\SharedIntentsResultsIntentsSegmentsItemsBuilder;
+use DeepgramLib\Models\Builders\SharedIntentsResultsIntentsSegmentsItemsIntentsItemsBuilder;
+use DeepgramLib\Models\Builders\SharedSentimentsBuilder;
+use DeepgramLib\Models\Builders\SharedSentimentsSegmentsItemsBuilder;
+use DeepgramLib\Models\Builders\SharedSentimentsAverageBuilder;
 
 $readV1Response = ReadV1ResponseBuilder::init(
     ReadV1ResponseMetadataBuilder::init()

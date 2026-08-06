@@ -19,18 +19,19 @@ $manageV1ProjectsMembersInvitesApi = $client->getManageV1ProjectsMembersInvitesA
 
 Generates a list of invites for a specific project
 
-:information_source: **Note** This endpoint does not require authentication.
-
 ```php
-function mList(string $projectId, string $authorization): ApiResponse
+function mList(string $projectId): ApiResponse
 ```
+
+## Authentication
+
+This endpoint requires [ApiKeyAuth](../../doc/auth/custom-header-signature.md)
 
 ## Parameters
 
 | Parameter | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `projectId` | `string` | Template, Required | The unique identifier of the project |
-| `authorization` | `string` | Header, Required | Use `Authorization: Token <API_KEY>`<br>Example: `Authorization: Token 12345abcdef` |
 
 ## Response Type
 
@@ -43,13 +44,8 @@ This method returns an [`ApiResponse`](../../doc/api-response.md) instance. The 
 ```php
 $projectId = 'project_id6';
 
-$authorization = 'Authorization8';
-
 $manageV1ProjectsMembersInvitesApi = $client->getManageV1ProjectsMembersInvitesApi();
-$apiResponse = $manageV1ProjectsMembersInvitesApi->mList(
-    $projectId,
-    $authorization
-);
+$apiResponse = $manageV1ProjectsMembersInvitesApi->mList($projectId);
 
 // Extracting response status code
 var_dump($apiResponse->getStatusCode());
@@ -76,22 +72,19 @@ if ($apiResponse->isSuccess()) {
 
 Generates an invite for a specific project
 
-:information_source: **Note** This endpoint does not require authentication.
-
 ```php
-function create(
-    string $projectId,
-    string $authorization,
-    ?CreateProjectInviteV1Request $body = null
-): ApiResponse
+function create(string $projectId, ?CreateProjectInviteV1Request $body = null): ApiResponse
 ```
+
+## Authentication
+
+This endpoint requires [ApiKeyAuth](../../doc/auth/custom-header-signature.md)
 
 ## Parameters
 
 | Parameter | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `projectId` | `string` | Template, Required | The unique identifier of the project |
-| `authorization` | `string` | Header, Required | Use `Authorization: Token <API_KEY>`<br>Example: `Authorization: Token 12345abcdef` |
 | `body` | [`?CreateProjectInviteV1Request`](../../doc/models/create-project-invite-v1-request.md) | Body, Optional | email to invite to the project |
 
 ## Response Type
@@ -105,13 +98,8 @@ This method returns an [`ApiResponse`](../../doc/api-response.md) instance. The 
 ```php
 $projectId = 'project_id6';
 
-$authorization = 'Authorization8';
-
 $manageV1ProjectsMembersInvitesApi = $client->getManageV1ProjectsMembersInvitesApi();
-$apiResponse = $manageV1ProjectsMembersInvitesApi->create(
-    $projectId,
-    $authorization
-);
+$apiResponse = $manageV1ProjectsMembersInvitesApi->create($projectId);
 
 // Extracting response status code
 var_dump($apiResponse->getStatusCode());
@@ -138,11 +126,13 @@ if ($apiResponse->isSuccess()) {
 
 Deletes an invite for a specific project
 
-:information_source: **Note** This endpoint does not require authentication.
-
 ```php
-function delete(string $projectId, string $email, string $authorization): ApiResponse
+function delete(string $projectId, string $email): ApiResponse
 ```
+
+## Authentication
+
+This endpoint requires [ApiKeyAuth](../../doc/auth/custom-header-signature.md)
 
 ## Parameters
 
@@ -150,7 +140,6 @@ function delete(string $projectId, string $email, string $authorization): ApiRes
 |  --- | --- | --- | --- |
 | `projectId` | `string` | Template, Required | The unique identifier of the project |
 | `email` | `string` | Template, Required | The email address of the member |
-| `authorization` | `string` | Header, Required | Use `Authorization: Token <API_KEY>`<br>Example: `Authorization: Token 12345abcdef` |
 
 ## Response Type
 
@@ -165,13 +154,10 @@ $projectId = 'project_id6';
 
 $email = 'email6';
 
-$authorization = 'Authorization8';
-
 $manageV1ProjectsMembersInvitesApi = $client->getManageV1ProjectsMembersInvitesApi();
 $apiResponse = $manageV1ProjectsMembersInvitesApi->delete(
     $projectId,
-    $email,
-    $authorization
+    $email
 );
 
 // Extracting response status code

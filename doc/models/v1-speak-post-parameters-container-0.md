@@ -16,7 +16,7 @@ No container.
 ## Example
 
 ```php
-use RestApiLib\Models\V1SpeakPostParametersContainer0;
+use DeepgramLib\Models\V1SpeakPostParametersContainer0;
 
 $v1SpeakPostParametersContainer0 = V1SpeakPostParametersContainer0::NONE;
 ```

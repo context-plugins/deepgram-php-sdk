@@ -21,8 +21,8 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\SharedSentimentsSegmentsItemsBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\SharedSentimentsSegmentsItemsBuilder;
+use DeepgramLib\ApiHelper;
 
 $sharedSentimentsSegmentsItems = SharedSentimentsSegmentsItemsBuilder::init()
     ->text('text2')

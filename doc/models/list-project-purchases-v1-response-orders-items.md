@@ -22,9 +22,9 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\ListProjectPurchasesV1ResponseOrdersItemsBuilder;
-use RestApiLib\Utils\DateTimeHelper;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\ListProjectPurchasesV1ResponseOrdersItemsBuilder;
+use DeepgramLib\Utils\DateTimeHelper;
+use DeepgramLib\ApiHelper;
 
 $listProjectPurchasesV1ResponseOrdersItems = ListProjectPurchasesV1ResponseOrdersItemsBuilder::init()
     ->orderId('00000276-0000-0000-0000-000000000000')

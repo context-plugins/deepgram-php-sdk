@@ -18,18 +18,19 @@ $manageV1ProjectsModelsApi = $client->getManageV1ProjectsModelsApi();
 
 Returns metadata on all the latest models that a specific project has access to, including non-public models
 
-:information_source: **Note** This endpoint does not require authentication.
-
 ```php
-function mList(string $projectId, string $authorization, ?bool $includeOutdated = null): ApiResponse
+function mList(string $projectId, ?bool $includeOutdated = null): ApiResponse
 ```
+
+## Authentication
+
+This endpoint requires [ApiKeyAuth](../../doc/auth/custom-header-signature.md)
 
 ## Parameters
 
 | Parameter | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `projectId` | `string` | Template, Required | The unique identifier of the project |
-| `authorization` | `string` | Header, Required | Use `Authorization: Token <API_KEY>`<br>Example: `Authorization: Token 12345abcdef` |
 | `includeOutdated` | `?bool` | Query, Optional | returns non-latest versions of models |
 
 ## Response Type
@@ -43,13 +44,8 @@ This method returns an [`ApiResponse`](../../doc/api-response.md) instance. The 
 ```php
 $projectId = 'project_id6';
 
-$authorization = 'Authorization8';
-
 $manageV1ProjectsModelsApi = $client->getManageV1ProjectsModelsApi();
-$apiResponse = $manageV1ProjectsModelsApi->mList(
-    $projectId,
-    $authorization
-);
+$apiResponse = $manageV1ProjectsModelsApi->mList($projectId);
 
 // Extracting response status code
 var_dump($apiResponse->getStatusCode());
@@ -76,11 +72,13 @@ if ($apiResponse->isSuccess()) {
 
 Returns metadata for a specific model
 
-:information_source: **Note** This endpoint does not require authentication.
-
 ```php
-function get(string $projectId, string $modelId, string $authorization): ApiResponse
+function get(string $projectId, string $modelId): ApiResponse
 ```
+
+## Authentication
+
+This endpoint requires [ApiKeyAuth](../../doc/auth/custom-header-signature.md)
 
 ## Parameters
 
@@ -88,7 +86,6 @@ function get(string $projectId, string $modelId, string $authorization): ApiResp
 |  --- | --- | --- | --- |
 | `projectId` | `string` | Template, Required | The unique identifier of the project |
 | `modelId` | `string` | Template, Required | The specific UUID of the model |
-| `authorization` | `string` | Header, Required | Use `Authorization: Token <API_KEY>`<br>Example: `Authorization: Token 12345abcdef` |
 
 ## Response Type
 
@@ -103,13 +100,10 @@ $projectId = 'project_id6';
 
 $modelId = 'model_id0';
 
-$authorization = 'Authorization8';
-
 $manageV1ProjectsModelsApi = $client->getManageV1ProjectsModelsApi();
 $apiResponse = $manageV1ProjectsModelsApi->get(
     $projectId,
-    $modelId,
-    $authorization
+    $modelId
 );
 
 // Extracting response status code

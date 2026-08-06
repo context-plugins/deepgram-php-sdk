@@ -116,7 +116,7 @@
 ## Example
 
 ```php
-use RestApiLib\Models\V1SpeakPostParametersModel;
+use DeepgramLib\Models\V1SpeakPostParametersModel;
 
 $v1SpeakPostParametersModel = V1SpeakPostParametersModel::AURA2HECTORFR;
 ```

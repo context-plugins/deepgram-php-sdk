@@ -18,7 +18,7 @@ Deployment type for the requests
 ## Example
 
 ```php
-use RestApiLib\Models\V1ProjectsProjectIdUsageGetParametersDeployment;
+use DeepgramLib\Models\V1ProjectsProjectIdUsageGetParametersDeployment;
 
 $v1ProjectsProjectIdUsageGetParametersDeployment = V1ProjectsProjectIdUsageGetParametersDeployment::HOSTED;
 ```

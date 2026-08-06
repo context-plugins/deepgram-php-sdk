@@ -13,11 +13,13 @@ $agentV1SettingsThinkModelsApi = $client->getAgentV1SettingsThinkModelsApi();
 
 Retrieves the available think models that can be used for AI agent processing
 
-:information_source: **Note** This endpoint does not require authentication.
-
 ```php
 function mList(): ApiResponse
 ```
+
+## Authentication
+
+This endpoint requires [ApiKeyAuth](../../doc/auth/custom-header-signature.md)
 
 ## Response Type
 

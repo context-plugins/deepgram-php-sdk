@@ -19,8 +19,8 @@ Request body for updating an agent variable
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\UpdateAgentVariableV1RequestBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\UpdateAgentVariableV1RequestBuilder;
+use DeepgramLib\ApiHelper;
 
 $updateAgentVariableV1Request = UpdateAgentVariableV1RequestBuilder::init(
     ApiHelper::deserialize('{"key1":"val1","key2":"val2"}')

@@ -24,8 +24,8 @@ API key created
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\CreateKeyV1ResponseBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\CreateKeyV1ResponseBuilder;
+use DeepgramLib\ApiHelper;
 
 $createKeyV1Response = CreateKeyV1ResponseBuilder::init()
     ->apiKeyId('api_key_id0')

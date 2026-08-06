@@ -19,8 +19,8 @@ Accepted response returned when a callback URL is supplied; the audio is deliver
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\SpeakV2AcceptedResponseBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\SpeakV2AcceptedResponseBuilder;
+use DeepgramLib\ApiHelper;
 
 $speakV2AcceptedResponse = SpeakV2AcceptedResponseBuilder::init(
     '00001fa4-0000-0000-0000-000000000000'

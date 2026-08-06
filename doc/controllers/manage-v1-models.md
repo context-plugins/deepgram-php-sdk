@@ -18,17 +18,18 @@ $manageV1ModelsApi = $client->getManageV1ModelsApi();
 
 Returns metadata on all the latest public models. To retrieve custom models, use Get Project Models.
 
-:information_source: **Note** This endpoint does not require authentication.
-
 ```php
-function mList(string $authorization, ?bool $includeOutdated = null): ApiResponse
+function mList(?bool $includeOutdated = null): ApiResponse
 ```
+
+## Authentication
+
+This endpoint requires [ApiKeyAuth](../../doc/auth/custom-header-signature.md)
 
 ## Parameters
 
 | Parameter | Type | Tags | Description |
 |  --- | --- | --- | --- |
-| `authorization` | `string` | Header, Required | Use `Authorization: Token <API_KEY>`<br>Example: `Authorization: Token 12345abcdef` |
 | `includeOutdated` | `?bool` | Query, Optional | returns non-latest versions of models |
 
 ## Response Type
@@ -40,10 +41,8 @@ This method returns an [`ApiResponse`](../../doc/api-response.md) instance. The 
 ## Example Usage
 
 ```php
-$authorization = 'Authorization8';
-
 $manageV1ModelsApi = $client->getManageV1ModelsApi();
-$apiResponse = $manageV1ModelsApi->mList($authorization);
+$apiResponse = $manageV1ModelsApi->mList();
 
 // Extracting response status code
 var_dump($apiResponse->getStatusCode());
@@ -70,18 +69,19 @@ if ($apiResponse->isSuccess()) {
 
 Returns metadata for a specific public model
 
-:information_source: **Note** This endpoint does not require authentication.
-
 ```php
-function get(string $modelId, string $authorization): ApiResponse
+function get(string $modelId): ApiResponse
 ```
+
+## Authentication
+
+This endpoint requires [ApiKeyAuth](../../doc/auth/custom-header-signature.md)
 
 ## Parameters
 
 | Parameter | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `modelId` | `string` | Template, Required | The specific UUID of the model |
-| `authorization` | `string` | Header, Required | Use `Authorization: Token <API_KEY>`<br>Example: `Authorization: Token 12345abcdef` |
 
 ## Response Type
 
@@ -94,13 +94,8 @@ This method returns an [`ApiResponse`](../../doc/api-response.md) instance. The 
 ```php
 $modelId = 'model_id0';
 
-$authorization = 'Authorization8';
-
 $manageV1ModelsApi = $client->getManageV1ModelsApi();
-$apiResponse = $manageV1ModelsApi->get(
-    $modelId,
-    $authorization
-);
+$apiResponse = $manageV1ModelsApi->get($modelId);
 
 // Extracting response status code
 var_dump($apiResponse->getStatusCode());

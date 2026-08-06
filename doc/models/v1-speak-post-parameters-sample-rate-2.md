@@ -17,7 +17,7 @@ Encoding - alaw. Supported sample rates - 8000, 16000 Hz.
 ## Example
 
 ```php
-use RestApiLib\Models\V1SpeakPostParametersSampleRate2;
+use DeepgramLib\Models\V1SpeakPostParametersSampleRate2;
 
 $v1SpeakPostParametersSampleRate2 = V1SpeakPostParametersSampleRate2::ENUM_8000;
 ```

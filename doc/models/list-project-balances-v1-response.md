@@ -17,9 +17,9 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\ListProjectBalancesV1ResponseBuilder;
-use RestApiLib\Models\Builders\ListProjectBalancesV1ResponseBalancesItemsBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\ListProjectBalancesV1ResponseBuilder;
+use DeepgramLib\Models\Builders\ListProjectBalancesV1ResponseBalancesItemsBuilder;
+use DeepgramLib\ApiHelper;
 
 $listProjectBalancesV1Response = ListProjectBalancesV1ResponseBuilder::init()
     ->balances(

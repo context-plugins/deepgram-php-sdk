@@ -14,7 +14,7 @@
 ## Example
 
 ```php
-use RestApiLib\Models\V1ReadPostParametersSummarize0;
+use DeepgramLib\Models\V1ReadPostParametersSummarize0;
 
 $v1ReadPostParametersSummarize0 = V1ReadPostParametersSummarize0::V2;
 ```

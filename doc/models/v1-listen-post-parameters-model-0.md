@@ -44,7 +44,7 @@ Our public models available to all accounts
 ## Example
 
 ```php
-use RestApiLib\Models\V1ListenPostParametersModel0;
+use DeepgramLib\Models\V1ListenPostParametersModel0;
 
 $v1ListenPostParametersModel0 = V1ListenPostParametersModel0::PHONECALL;
 ```

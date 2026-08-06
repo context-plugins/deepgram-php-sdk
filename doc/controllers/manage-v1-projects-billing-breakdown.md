@@ -13,12 +13,9 @@ $manageV1ProjectsBillingBreakdownApi = $client->getManageV1ProjectsBillingBreakd
 
 Retrieves the billing summary for a specific project, with various filter options or by grouping options.
 
-:information_source: **Note** This endpoint does not require authentication.
-
 ```php
 function mList(
     string $projectId,
-    string $authorization,
     ?\DateTime $start = null,
     ?\DateTime $end = null,
     ?string $accessor = null,
@@ -29,12 +26,15 @@ function mList(
 ): ApiResponse
 ```
 
+## Authentication
+
+This endpoint requires [ApiKeyAuth](../../doc/auth/custom-header-signature.md)
+
 ## Parameters
 
 | Parameter | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `projectId` | `string` | Template, Required | The unique identifier of the project |
-| `authorization` | `string` | Header, Required | Use `Authorization: Token <API_KEY>`<br>Example: `Authorization: Token 12345abcdef` |
 | `start` | `?DateTime` | Query, Optional | Start date of the requested date range. Format accepted is YYYY-MM-DD |
 | `end` | `?DateTime` | Query, Optional | End date of the requested date range. Format accepted is YYYY-MM-DD |
 | `accessor` | `?string` | Query, Optional | Filter for requests where a specific accessor was used |
@@ -54,13 +54,8 @@ This method returns an [`ApiResponse`](../../doc/api-response.md) instance. The 
 ```php
 $projectId = 'project_id6';
 
-$authorization = 'Authorization8';
-
 $manageV1ProjectsBillingBreakdownApi = $client->getManageV1ProjectsBillingBreakdownApi();
-$apiResponse = $manageV1ProjectsBillingBreakdownApi->mList(
-    $projectId,
-    $authorization
-);
+$apiResponse = $manageV1ProjectsBillingBreakdownApi->mList($projectId);
 
 // Extracting response status code
 var_dump($apiResponse->getStatusCode());

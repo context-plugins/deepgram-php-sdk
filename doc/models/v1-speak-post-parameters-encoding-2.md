@@ -16,7 +16,7 @@ Encoding - mulaw. Compressed audio format commonly used in telephony.
 ## Example
 
 ```php
-use RestApiLib\Models\V1SpeakPostParametersEncoding2;
+use DeepgramLib\Models\V1SpeakPostParametersEncoding2;
 
 $v1SpeakPostParametersEncoding2 = V1SpeakPostParametersEncoding2::MULAW;
 ```

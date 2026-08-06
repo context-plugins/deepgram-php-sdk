@@ -17,10 +17,10 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\SharedTopicsResultsTopicsBuilder;
-use RestApiLib\Models\Builders\SharedTopicsResultsTopicsSegmentsItemsBuilder;
-use RestApiLib\Models\Builders\SharedTopicsResultsTopicsSegmentsItemsTopicsItemsBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\SharedTopicsResultsTopicsBuilder;
+use DeepgramLib\Models\Builders\SharedTopicsResultsTopicsSegmentsItemsBuilder;
+use DeepgramLib\Models\Builders\SharedTopicsResultsTopicsSegmentsItemsTopicsItemsBuilder;
+use DeepgramLib\ApiHelper;
 
 $sharedTopicsResultsTopics = SharedTopicsResultsTopicsBuilder::init()
     ->segments(

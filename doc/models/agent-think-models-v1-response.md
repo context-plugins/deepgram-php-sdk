@@ -17,10 +17,10 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\AgentThinkModelsV1ResponseBuilder;
-use RestApiLib\Models\Builders\AgentThinkModelsV1ResponseModelsItems0Builder;
-use RestApiLib\Models\AgentThinkModelsV1ResponseModelsItemsOneOf0Id;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\AgentThinkModelsV1ResponseBuilder;
+use DeepgramLib\Models\Builders\AgentThinkModelsV1ResponseModelsItems0Builder;
+use DeepgramLib\Models\AgentThinkModelsV1ResponseModelsItemsOneOf0Id;
+use DeepgramLib\ApiHelper;
 
 $agentThinkModelsV1Response = AgentThinkModelsV1ResponseBuilder::init(
     [

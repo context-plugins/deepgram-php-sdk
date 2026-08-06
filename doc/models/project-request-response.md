@@ -27,9 +27,9 @@ A single request
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\ProjectRequestResponseBuilder;
-use RestApiLib\Utils\DateTimeHelper;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\ProjectRequestResponseBuilder;
+use DeepgramLib\Utils\DateTimeHelper;
+use DeepgramLib\ApiHelper;
 
 $projectRequestResponse = ProjectRequestResponseBuilder::init()
     ->requestId('request_id6')

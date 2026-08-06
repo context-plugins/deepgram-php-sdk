@@ -19,8 +19,8 @@ Request body for Flux TTS batch (REST) text-to-speech conversion. The full block
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\SpeakV2RequestBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\SpeakV2RequestBuilder;
+use DeepgramLib\ApiHelper;
 
 $speakV2Request = SpeakV2RequestBuilder::init(
     'text2'

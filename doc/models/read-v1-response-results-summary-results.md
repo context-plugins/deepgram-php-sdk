@@ -17,9 +17,9 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\ReadV1ResponseResultsSummaryResultsBuilder;
-use RestApiLib\Models\Builders\ReadV1ResponseResultsSummaryResultsSummaryBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\ReadV1ResponseResultsSummaryResultsBuilder;
+use DeepgramLib\Models\Builders\ReadV1ResponseResultsSummaryResultsSummaryBuilder;
+use DeepgramLib\ApiHelper;
 
 $readV1ResponseResultsSummaryResults = ReadV1ResponseResultsSummaryResultsBuilder::init()
     ->summary(

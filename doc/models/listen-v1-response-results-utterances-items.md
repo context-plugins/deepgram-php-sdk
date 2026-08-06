@@ -24,8 +24,8 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\ListenV1ResponseResultsUtterancesItemsBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\ListenV1ResponseResultsUtterancesItemsBuilder;
+use DeepgramLib\ApiHelper;
 
 $listenV1ResponseResultsUtterancesItems = ListenV1ResponseResultsUtterancesItemsBuilder::init()
     ->start(55.44)

@@ -13,23 +13,19 @@ $manageV1ProjectsUsageFieldsApi = $client->getManageV1ProjectsUsageFieldsApi();
 
 Lists the features, models, tags, languages, and processing method used for requests in the specified project
 
-:information_source: **Note** This endpoint does not require authentication.
-
 ```php
-function mList(
-    string $projectId,
-    string $authorization,
-    ?\DateTime $start = null,
-    ?\DateTime $end = null
-): ApiResponse
+function mList(string $projectId, ?\DateTime $start = null, ?\DateTime $end = null): ApiResponse
 ```
+
+## Authentication
+
+This endpoint requires [ApiKeyAuth](../../doc/auth/custom-header-signature.md)
 
 ## Parameters
 
 | Parameter | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `projectId` | `string` | Template, Required | The unique identifier of the project |
-| `authorization` | `string` | Header, Required | Use `Authorization: Token <API_KEY>`<br>Example: `Authorization: Token 12345abcdef` |
 | `start` | `?DateTime` | Query, Optional | Start date of the requested date range. Format accepted is YYYY-MM-DD |
 | `end` | `?DateTime` | Query, Optional | End date of the requested date range. Format accepted is YYYY-MM-DD |
 
@@ -44,13 +40,8 @@ This method returns an [`ApiResponse`](../../doc/api-response.md) instance. The 
 ```php
 $projectId = 'project_id6';
 
-$authorization = 'Authorization8';
-
 $manageV1ProjectsUsageFieldsApi = $client->getManageV1ProjectsUsageFieldsApi();
-$apiResponse = $manageV1ProjectsUsageFieldsApi->mList(
-    $projectId,
-    $authorization
-);
+$apiResponse = $manageV1ProjectsUsageFieldsApi->mList($projectId);
 
 // Extracting response status code
 var_dump($apiResponse->getStatusCode());

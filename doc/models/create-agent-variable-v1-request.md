@@ -21,8 +21,8 @@ Request body for creating an agent variable
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\CreateAgentVariableV1RequestBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\CreateAgentVariableV1RequestBuilder;
+use DeepgramLib\ApiHelper;
 
 $createAgentVariableV1Request = CreateAgentVariableV1RequestBuilder::init(
     'key0',

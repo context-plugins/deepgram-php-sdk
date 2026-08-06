@@ -16,7 +16,7 @@ Encoding - opus. Sample rate is fixed at 48000 Hz.
 ## Example
 
 ```php
-use RestApiLib\Models\V1SpeakPostParametersSampleRate4;
+use DeepgramLib\Models\V1SpeakPostParametersSampleRate4;
 
 $v1SpeakPostParametersSampleRate4 = V1SpeakPostParametersSampleRate4::ENUM_48000;
 ```

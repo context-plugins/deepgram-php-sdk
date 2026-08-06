@@ -21,9 +21,9 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\GetProjectDistributionCredentialsV1ResponseDistributionCredentialsBuilder;
-use RestApiLib\Utils\DateTimeHelper;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\GetProjectDistributionCredentialsV1ResponseDistributionCredentialsBuilder;
+use DeepgramLib\Utils\DateTimeHelper;
+use DeepgramLib\ApiHelper;
 
 $getProjectDistributionCredentialsV1ResponseDistributionCredentials = GetProjectDistributionCredentialsV1ResponseDistributionCredentialsBuilder::init(
     '00001798-0000-0000-0000-000000000000',

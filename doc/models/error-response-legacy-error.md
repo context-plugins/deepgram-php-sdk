@@ -19,8 +19,8 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\ErrorResponseLegacyErrorBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\ErrorResponseLegacyErrorBuilder;
+use DeepgramLib\ApiHelper;
 
 $errorResponseLegacyError = ErrorResponseLegacyErrorBuilder::init()
     ->errCode('err_code8')

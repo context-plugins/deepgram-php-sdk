@@ -17,7 +17,7 @@
 ## Example
 
 ```php
-use RestApiLib\Models\V1ProjectsProjectIdBillingBreakdownGetParametersGroupingSchemaItems;
+use DeepgramLib\Models\V1ProjectsProjectIdBillingBreakdownGetParametersGroupingSchemaItems;
 
 $v1ProjectsProjectIdBillingBreakdownGetParametersGroupingSchemaItems = V1ProjectsProjectIdBillingBreakdownGetParametersGroupingSchemaItems::LINE_ITEM;
 ```

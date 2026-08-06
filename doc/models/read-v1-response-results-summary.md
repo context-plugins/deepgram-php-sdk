@@ -19,10 +19,10 @@ Output whenever `summary=true` is used
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\ReadV1ResponseResultsSummaryBuilder;
-use RestApiLib\Models\Builders\ReadV1ResponseResultsSummaryResultsBuilder;
-use RestApiLib\Models\Builders\ReadV1ResponseResultsSummaryResultsSummaryBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\ReadV1ResponseResultsSummaryBuilder;
+use DeepgramLib\Models\Builders\ReadV1ResponseResultsSummaryResultsBuilder;
+use DeepgramLib\Models\Builders\ReadV1ResponseResultsSummaryResultsSummaryBuilder;
+use DeepgramLib\ApiHelper;
 
 $readV1ResponseResultsSummary = ReadV1ResponseResultsSummaryBuilder::init()
     ->results(

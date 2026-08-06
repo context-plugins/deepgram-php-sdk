@@ -18,7 +18,7 @@ The unique identifier of the Google model
 ## Example
 
 ```php
-use RestApiLib\Models\AgentThinkModelsV1ResponseModelsItemsOneOf2Id;
+use DeepgramLib\Models\AgentThinkModelsV1ResponseModelsItemsOneOf2Id;
 
 $agentThinkModelsV1ResponseModelsItemsOneOf2Id = AgentThinkModelsV1ResponseModelsItemsOneOf2Id::ENUM_GEMINI25FLASH;
 ```

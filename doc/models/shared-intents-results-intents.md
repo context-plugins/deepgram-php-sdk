@@ -17,10 +17,10 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\SharedIntentsResultsIntentsBuilder;
-use RestApiLib\Models\Builders\SharedIntentsResultsIntentsSegmentsItemsBuilder;
-use RestApiLib\Models\Builders\SharedIntentsResultsIntentsSegmentsItemsIntentsItemsBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\SharedIntentsResultsIntentsBuilder;
+use DeepgramLib\Models\Builders\SharedIntentsResultsIntentsSegmentsItemsBuilder;
+use DeepgramLib\Models\Builders\SharedIntentsResultsIntentsSegmentsItemsIntentsItemsBuilder;
+use DeepgramLib\ApiHelper;
 
 $sharedIntentsResultsIntents = SharedIntentsResultsIntentsBuilder::init()
     ->segments(

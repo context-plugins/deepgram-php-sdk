@@ -18,8 +18,8 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\ListenV1ResponseResultsSummaryBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\ListenV1ResponseResultsSummaryBuilder;
+use DeepgramLib\ApiHelper;
 
 $listenV1ResponseResultsSummary = ListenV1ResponseResultsSummaryBuilder::init()
     ->result('result2')

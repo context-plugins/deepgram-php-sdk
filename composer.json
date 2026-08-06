@@ -33,12 +33,12 @@
     },
     "autoload": {
         "psr-4": {
-            "RestApiLib\\": "src/"
+            "DeepgramLib\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "RestApiLib\\Tests\\": "tests/"
+            "DeepgramLib\\Tests\\": "tests/"
         }
     },
     "scripts": {

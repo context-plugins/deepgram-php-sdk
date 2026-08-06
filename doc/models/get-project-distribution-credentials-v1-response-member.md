@@ -18,8 +18,8 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\GetProjectDistributionCredentialsV1ResponseMemberBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\GetProjectDistributionCredentialsV1ResponseMemberBuilder;
+use DeepgramLib\ApiHelper;
 
 $getProjectDistributionCredentialsV1ResponseMember = GetProjectDistributionCredentialsV1ResponseMemberBuilder::init(
     '00000eba-0000-0000-0000-000000000000',

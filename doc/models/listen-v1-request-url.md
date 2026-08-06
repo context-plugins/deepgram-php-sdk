@@ -19,8 +19,8 @@ Audio file URL to transcribe
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\ListenV1RequestUrlBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\ListenV1RequestUrlBuilder;
+use DeepgramLib\ApiHelper;
 
 $listenV1RequestUrl = ListenV1RequestUrlBuilder::init(
     'url8'

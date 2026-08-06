@@ -23,9 +23,9 @@ A template variable for agent configurations
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\AgentVariableV1Builder;
-use RestApiLib\ApiHelper;
-use RestApiLib\Utils\DateTimeHelper;
+use DeepgramLib\Models\Builders\AgentVariableV1Builder;
+use DeepgramLib\ApiHelper;
+use DeepgramLib\Utils\DateTimeHelper;
 
 $agentVariableV1 = AgentVariableV1Builder::init(
     'variable_id6',

@@ -18,8 +18,8 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\ListProjectInvitesV1ResponseInvitesItemsBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\ListProjectInvitesV1ResponseInvitesItemsBuilder;
+use DeepgramLib\ApiHelper;
 
 $listProjectInvitesV1ResponseInvitesItems = ListProjectInvitesV1ResponseInvitesItemsBuilder::init()
     ->email('email4')

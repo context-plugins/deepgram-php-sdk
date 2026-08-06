@@ -18,8 +18,8 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\BillingBreakdownV1ResponseResolutionBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\BillingBreakdownV1ResponseResolutionBuilder;
+use DeepgramLib\ApiHelper;
 
 $billingBreakdownV1ResponseResolution = BillingBreakdownV1ResponseResolutionBuilder::init(
     'units2',

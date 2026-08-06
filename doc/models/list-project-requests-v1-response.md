@@ -19,10 +19,10 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\ListProjectRequestsV1ResponseBuilder;
-use RestApiLib\Models\Builders\ProjectRequestResponseBuilder;
-use RestApiLib\Utils\DateTimeHelper;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\ListProjectRequestsV1ResponseBuilder;
+use DeepgramLib\Models\Builders\ProjectRequestResponseBuilder;
+use DeepgramLib\Utils\DateTimeHelper;
+use DeepgramLib\ApiHelper;
 
 $listProjectRequestsV1Response = ListProjectRequestsV1ResponseBuilder::init()
     ->page(239.24)

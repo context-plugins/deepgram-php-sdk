@@ -17,7 +17,7 @@ Encoding - mulaw. Supported sample rates - 8000, 16000 Hz.
 ## Example
 
 ```php
-use RestApiLib\Models\V1SpeakPostParametersSampleRate1;
+use DeepgramLib\Models\V1SpeakPostParametersSampleRate1;
 
 $v1SpeakPostParametersSampleRate1 = V1SpeakPostParametersSampleRate1::ENUM_8000;
 ```

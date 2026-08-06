@@ -16,7 +16,7 @@ Encoding - alaw. Supported container - wav (default), or no container.
 ## Example
 
 ```php
-use RestApiLib\Models\V2SpeakPostParametersContainer3;
+use DeepgramLib\Models\V2SpeakPostParametersContainer3;
 
 $v2SpeakPostParametersContainer3 = V2SpeakPostParametersContainer3::WAV;
 ```

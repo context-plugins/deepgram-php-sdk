@@ -13,12 +13,9 @@ $manageV1ProjectsUsageBreakdownApi = $client->getManageV1ProjectsUsageBreakdownA
 
 Retrieves the usage breakdown for a specific project, with various filter options by API feature or by groupings. Setting a feature (e.g. diarize) to true includes requests that used that feature, while false excludes requests that used it. Multiple true filters are combined with OR logic, while false filters use AND logic.
 
-:information_source: **Note** This endpoint does not require authentication.
-
 ```php
 function get(
     string $projectId,
-    string $authorization,
     ?\DateTime $start = null,
     ?\DateTime $end = null,
     ?string $grouping = null,
@@ -67,12 +64,15 @@ function get(
 ): ApiResponse
 ```
 
+## Authentication
+
+This endpoint requires [ApiKeyAuth](../../doc/auth/custom-header-signature.md)
+
 ## Parameters
 
 | Parameter | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `projectId` | `string` | Template, Required | The unique identifier of the project |
-| `authorization` | `string` | Header, Required | Use `Authorization: Token <API_KEY>`<br>Example: `Authorization: Token 12345abcdef` |
 | `start` | `?DateTime` | Query, Optional | Start date of the requested date range. Format accepted is YYYY-MM-DD |
 | `end` | `?DateTime` | Query, Optional | End date of the requested date range. Format accepted is YYYY-MM-DD |
 | `grouping` | [`?string(V1ProjectsProjectIdUsageBreakdownGetParametersGrouping)`](../../doc/models/v1-projects-project-id-usage-breakdown-get-parameters-grouping.md) | Query, Optional | Common usage grouping parameters |
@@ -130,13 +130,8 @@ This method returns an [`ApiResponse`](../../doc/api-response.md) instance. The 
 ```php
 $projectId = 'project_id6';
 
-$authorization = 'Authorization8';
-
 $manageV1ProjectsUsageBreakdownApi = $client->getManageV1ProjectsUsageBreakdownApi();
-$apiResponse = $manageV1ProjectsUsageBreakdownApi->get(
-    $projectId,
-    $authorization
-);
+$apiResponse = $manageV1ProjectsUsageBreakdownApi->get($projectId);
 
 // Extracting response status code
 var_dump($apiResponse->getStatusCode());

@@ -19,8 +19,8 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\GetProjectV1ResponseBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\GetProjectV1ResponseBuilder;
+use DeepgramLib\ApiHelper;
 
 $getProjectV1Response = GetProjectV1ResponseBuilder::init()
     ->projectId('project_id8')

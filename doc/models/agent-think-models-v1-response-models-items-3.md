@@ -21,9 +21,9 @@ Groq models
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\AgentThinkModelsV1ResponseModelsItems3Builder;
-use RestApiLib\Models\AgentThinkModelsV1ResponseModelsItemsOneOf3Id;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\AgentThinkModelsV1ResponseModelsItems3Builder;
+use DeepgramLib\Models\AgentThinkModelsV1ResponseModelsItemsOneOf3Id;
+use DeepgramLib\ApiHelper;
 
 $agentThinkModelsV1ResponseModelsItems3 = AgentThinkModelsV1ResponseModelsItems3Builder::init(
     AgentThinkModelsV1ResponseModelsItemsOneOf3Id::ENUM_OPENAIGPTOSS20B,

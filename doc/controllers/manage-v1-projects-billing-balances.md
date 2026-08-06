@@ -18,18 +18,19 @@ $manageV1ProjectsBillingBalancesApi = $client->getManageV1ProjectsBillingBalance
 
 Generates a list of outstanding balances for the specified project
 
-:information_source: **Note** This endpoint does not require authentication.
-
 ```php
-function mList(string $projectId, string $authorization): ApiResponse
+function mList(string $projectId): ApiResponse
 ```
+
+## Authentication
+
+This endpoint requires [ApiKeyAuth](../../doc/auth/custom-header-signature.md)
 
 ## Parameters
 
 | Parameter | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `projectId` | `string` | Template, Required | The unique identifier of the project |
-| `authorization` | `string` | Header, Required | Use `Authorization: Token <API_KEY>`<br>Example: `Authorization: Token 12345abcdef` |
 
 ## Response Type
 
@@ -42,13 +43,8 @@ This method returns an [`ApiResponse`](../../doc/api-response.md) instance. The 
 ```php
 $projectId = 'project_id6';
 
-$authorization = 'Authorization8';
-
 $manageV1ProjectsBillingBalancesApi = $client->getManageV1ProjectsBillingBalancesApi();
-$apiResponse = $manageV1ProjectsBillingBalancesApi->mList(
-    $projectId,
-    $authorization
-);
+$apiResponse = $manageV1ProjectsBillingBalancesApi->mList($projectId);
 
 // Extracting response status code
 var_dump($apiResponse->getStatusCode());
@@ -75,11 +71,13 @@ if ($apiResponse->isSuccess()) {
 
 Retrieves details about the specified balance
 
-:information_source: **Note** This endpoint does not require authentication.
-
 ```php
-function get(string $projectId, string $balanceId, string $authorization): ApiResponse
+function get(string $projectId, string $balanceId): ApiResponse
 ```
+
+## Authentication
+
+This endpoint requires [ApiKeyAuth](../../doc/auth/custom-header-signature.md)
 
 ## Parameters
 
@@ -87,7 +85,6 @@ function get(string $projectId, string $balanceId, string $authorization): ApiRe
 |  --- | --- | --- | --- |
 | `projectId` | `string` | Template, Required | The unique identifier of the project |
 | `balanceId` | `string` | Template, Required | The unique identifier of the balance |
-| `authorization` | `string` | Header, Required | Use `Authorization: Token <API_KEY>`<br>Example: `Authorization: Token 12345abcdef` |
 
 ## Response Type
 
@@ -102,13 +99,10 @@ $projectId = 'project_id6';
 
 $balanceId = 'balance_id2';
 
-$authorization = 'Authorization8';
-
 $manageV1ProjectsBillingBalancesApi = $client->getManageV1ProjectsBillingBalancesApi();
 $apiResponse = $manageV1ProjectsBillingBalancesApi->get(
     $projectId,
-    $balanceId,
-    $authorization
+    $balanceId
 );
 
 // Extracting response status code

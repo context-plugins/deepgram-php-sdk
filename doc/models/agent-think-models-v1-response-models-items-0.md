@@ -21,9 +21,9 @@ OpenAI models
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\AgentThinkModelsV1ResponseModelsItems0Builder;
-use RestApiLib\Models\AgentThinkModelsV1ResponseModelsItemsOneOf0Id;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\AgentThinkModelsV1ResponseModelsItems0Builder;
+use DeepgramLib\Models\AgentThinkModelsV1ResponseModelsItemsOneOf0Id;
+use DeepgramLib\ApiHelper;
 
 $agentThinkModelsV1ResponseModelsItems0 = AgentThinkModelsV1ResponseModelsItems0Builder::init(
     AgentThinkModelsV1ResponseModelsItemsOneOf0Id::ENUM_GPT41MINI,

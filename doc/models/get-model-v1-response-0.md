@@ -25,8 +25,8 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\GetModelV1Response0Builder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\GetModelV1Response0Builder;
+use DeepgramLib\ApiHelper;
 
 $getModelV1Response0 = GetModelV1Response0Builder::init()
     ->name('name6')

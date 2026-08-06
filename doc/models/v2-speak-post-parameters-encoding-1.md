@@ -16,7 +16,7 @@ Encoding - flac. Lossless audio format for high-quality compression.
 ## Example
 
 ```php
-use RestApiLib\Models\V2SpeakPostParametersEncoding1;
+use DeepgramLib\Models\V2SpeakPostParametersEncoding1;
 
 $v2SpeakPostParametersEncoding1 = V2SpeakPostParametersEncoding1::FLAC;
 ```

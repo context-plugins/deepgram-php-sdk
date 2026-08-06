@@ -18,11 +18,13 @@ $manageV1ProjectsMembersScopesApi = $client->getManageV1ProjectsMembersScopesApi
 
 Retrieves a list of scopes for a specific member
 
-:information_source: **Note** This endpoint does not require authentication.
-
 ```php
-function mList(string $projectId, string $memberId, string $authorization): ApiResponse
+function mList(string $projectId, string $memberId): ApiResponse
 ```
+
+## Authentication
+
+This endpoint requires [ApiKeyAuth](../../doc/auth/custom-header-signature.md)
 
 ## Parameters
 
@@ -30,7 +32,6 @@ function mList(string $projectId, string $memberId, string $authorization): ApiR
 |  --- | --- | --- | --- |
 | `projectId` | `string` | Template, Required | The unique identifier of the project |
 | `memberId` | `string` | Template, Required | The unique identifier of the Member |
-| `authorization` | `string` | Header, Required | Use `Authorization: Token <API_KEY>`<br>Example: `Authorization: Token 12345abcdef` |
 
 ## Response Type
 
@@ -45,13 +46,10 @@ $projectId = 'project_id6';
 
 $memberId = 'member_id0';
 
-$authorization = 'Authorization8';
-
 $manageV1ProjectsMembersScopesApi = $client->getManageV1ProjectsMembersScopesApi();
 $apiResponse = $manageV1ProjectsMembersScopesApi->mList(
     $projectId,
-    $memberId,
-    $authorization
+    $memberId
 );
 
 // Extracting response status code
@@ -79,16 +77,17 @@ if ($apiResponse->isSuccess()) {
 
 Updates the scopes for a specific member
 
-:information_source: **Note** This endpoint does not require authentication.
-
 ```php
 function update(
     string $projectId,
     string $memberId,
-    string $authorization,
     ?UpdateProjectMemberScopesV1Request $body = null
 ): ApiResponse
 ```
+
+## Authentication
+
+This endpoint requires [ApiKeyAuth](../../doc/auth/custom-header-signature.md)
 
 ## Parameters
 
@@ -96,7 +95,6 @@ function update(
 |  --- | --- | --- | --- |
 | `projectId` | `string` | Template, Required | The unique identifier of the project |
 | `memberId` | `string` | Template, Required | The unique identifier of the Member |
-| `authorization` | `string` | Header, Required | Use `Authorization: Token <API_KEY>`<br>Example: `Authorization: Token 12345abcdef` |
 | `body` | [`?UpdateProjectMemberScopesV1Request`](../../doc/models/update-project-member-scopes-v1-request.md) | Body, Optional | A scope to update |
 
 ## Response Type
@@ -112,13 +110,10 @@ $projectId = 'project_id6';
 
 $memberId = 'member_id0';
 
-$authorization = 'Authorization8';
-
 $manageV1ProjectsMembersScopesApi = $client->getManageV1ProjectsMembersScopesApi();
 $apiResponse = $manageV1ProjectsMembersScopesApi->update(
     $projectId,
-    $memberId,
-    $authorization
+    $memberId
 );
 
 // Extracting response status code

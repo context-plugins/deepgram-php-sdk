@@ -21,7 +21,7 @@ Encoding - mp3(default). Supported bitrates - 8000, 16000, 24000, 32000, 40000, 
 ## Example
 
 ```php
-use RestApiLib\Models\V2SpeakPostParametersBitRate0;
+use DeepgramLib\Models\V2SpeakPostParametersBitRate0;
 
 $v2SpeakPostParametersBitRate0 = V2SpeakPostParametersBitRate0::ENUM_8000;
 ```

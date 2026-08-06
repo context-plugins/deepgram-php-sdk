@@ -17,8 +17,8 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\ReadV1RequestUrlBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\ReadV1RequestUrlBuilder;
+use DeepgramLib\ApiHelper;
 
 $readV1RequestUrl = ReadV1RequestUrlBuilder::init(
     'url2'

@@ -17,11 +17,11 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\SharedTopicsResultsBuilder;
-use RestApiLib\Models\Builders\SharedTopicsResultsTopicsBuilder;
-use RestApiLib\Models\Builders\SharedTopicsResultsTopicsSegmentsItemsBuilder;
-use RestApiLib\Models\Builders\SharedTopicsResultsTopicsSegmentsItemsTopicsItemsBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\SharedTopicsResultsBuilder;
+use DeepgramLib\Models\Builders\SharedTopicsResultsTopicsBuilder;
+use DeepgramLib\Models\Builders\SharedTopicsResultsTopicsSegmentsItemsBuilder;
+use DeepgramLib\Models\Builders\SharedTopicsResultsTopicsSegmentsItemsTopicsItemsBuilder;
+use DeepgramLib\ApiHelper;
 
 $sharedTopicsResults = SharedTopicsResultsBuilder::init()
     ->topics(

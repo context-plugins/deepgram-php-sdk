@@ -18,8 +18,8 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\ListProjectKeysV1ResponseApiKeysItemsMemberBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\ListProjectKeysV1ResponseApiKeysItemsMemberBuilder;
+use DeepgramLib\ApiHelper;
 
 $listProjectKeysV1ResponseApiKeysItemsMember = ListProjectKeysV1ResponseApiKeysItemsMemberBuilder::init()
     ->memberId('member_id6')

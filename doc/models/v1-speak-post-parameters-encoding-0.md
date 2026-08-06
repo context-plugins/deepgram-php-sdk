@@ -16,7 +16,7 @@ Encoding - linear16. Uncompressed, high-quality audio format often used for tele
 ## Example
 
 ```php
-use RestApiLib\Models\V1SpeakPostParametersEncoding0;
+use DeepgramLib\Models\V1SpeakPostParametersEncoding0;
 
 $v1SpeakPostParametersEncoding0 = V1SpeakPostParametersEncoding0::LINEAR16;
 ```

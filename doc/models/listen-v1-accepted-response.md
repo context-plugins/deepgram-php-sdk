@@ -19,8 +19,8 @@ Accepted response for asynchronous transcription requests
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\ListenV1AcceptedResponseBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\ListenV1AcceptedResponseBuilder;
+use DeepgramLib\ApiHelper;
 
 $listenV1AcceptedResponse = ListenV1AcceptedResponseBuilder::init(
     '000016c8-0000-0000-0000-000000000000'

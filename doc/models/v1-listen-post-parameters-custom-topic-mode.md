@@ -15,7 +15,7 @@
 ## Example
 
 ```php
-use RestApiLib\Models\V1ListenPostParametersCustomTopicMode;
+use DeepgramLib\Models\V1ListenPostParametersCustomTopicMode;
 
 $v1ListenPostParametersCustomTopicMode = V1ListenPostParametersCustomTopicMode::EXTENDED;
 ```

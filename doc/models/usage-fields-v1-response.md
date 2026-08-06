@@ -20,9 +20,9 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\UsageFieldsV1ResponseBuilder;
-use RestApiLib\Models\Builders\UsageFieldsV1ResponseModelsItemsBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\UsageFieldsV1ResponseBuilder;
+use DeepgramLib\Models\Builders\UsageFieldsV1ResponseModelsItemsBuilder;
+use DeepgramLib\ApiHelper;
 
 $usageFieldsV1Response = UsageFieldsV1ResponseBuilder::init()
     ->tags(

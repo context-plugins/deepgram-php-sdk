@@ -23,9 +23,9 @@ A reusable agent configuration
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\AgentConfigurationV1Builder;
-use RestApiLib\ApiHelper;
-use RestApiLib\Utils\DateTimeHelper;
+use DeepgramLib\Models\Builders\AgentConfigurationV1Builder;
+use DeepgramLib\ApiHelper;
+use DeepgramLib\Utils\DateTimeHelper;
 
 $agentConfigurationV1 = AgentConfigurationV1Builder::init(
     'agent_id0',

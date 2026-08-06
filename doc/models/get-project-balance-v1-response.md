@@ -20,8 +20,8 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\GetProjectBalanceV1ResponseBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\GetProjectBalanceV1ResponseBuilder;
+use DeepgramLib\ApiHelper;
 
 $getProjectBalanceV1Response = GetProjectBalanceV1ResponseBuilder::init()
     ->balanceId('balance_id6')

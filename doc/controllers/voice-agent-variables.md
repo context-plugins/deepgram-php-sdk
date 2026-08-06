@@ -21,22 +21,19 @@ $voiceAgentVariablesApi = $client->getVoiceAgentVariablesApi();
 
 Creates a new template variable. Variables follow the `DG_<VARIABLE_NAME>` naming format and can substitute any JSON value in an agent configuration.
 
-:information_source: **Note** This endpoint does not require authentication.
-
 ```php
-function create(
-    string $projectId,
-    string $authorization,
-    ?CreateAgentVariableV1Request $body = null
-): ApiResponse
+function create(string $projectId, ?CreateAgentVariableV1Request $body = null): ApiResponse
 ```
+
+## Authentication
+
+This endpoint requires [ApiKeyAuth](../../doc/auth/custom-header-signature.md)
 
 ## Parameters
 
 | Parameter | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `projectId` | `string` | Template, Required | The unique identifier of the project |
-| `authorization` | `string` | Header, Required | Use `Authorization: Token <API_KEY>`<br>Example: `Authorization: Token 12345abcdef` |
 | `body` | [`?CreateAgentVariableV1Request`](../../doc/models/create-agent-variable-v1-request.md) | Body, Optional | Agent variable details |
 
 ## Response Type
@@ -50,8 +47,6 @@ This method returns an [`ApiResponse`](../../doc/api-response.md) instance. The 
 ```php
 $projectId = 'project_id6';
 
-$authorization = 'Authorization8';
-
 $body = CreateAgentVariableV1RequestBuilder::init(
     'key6',
     ApiHelper::deserialize('{"key1":"val1","key2":"val2"}')
@@ -62,7 +57,6 @@ $body = CreateAgentVariableV1RequestBuilder::init(
 $voiceAgentVariablesApi = $client->getVoiceAgentVariablesApi();
 $apiResponse = $voiceAgentVariablesApi->create(
     $projectId,
-    $authorization,
     $body
 );
 
@@ -91,18 +85,19 @@ if ($apiResponse->isSuccess()) {
 
 Returns all template variables for the specified project
 
-:information_source: **Note** This endpoint does not require authentication.
-
 ```php
-function mList(string $projectId, string $authorization): ApiResponse
+function mList(string $projectId): ApiResponse
 ```
+
+## Authentication
+
+This endpoint requires [ApiKeyAuth](../../doc/auth/custom-header-signature.md)
 
 ## Parameters
 
 | Parameter | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `projectId` | `string` | Template, Required | The unique identifier of the project |
-| `authorization` | `string` | Header, Required | Use `Authorization: Token <API_KEY>`<br>Example: `Authorization: Token 12345abcdef` |
 
 ## Response Type
 
@@ -115,13 +110,8 @@ This method returns an [`ApiResponse`](../../doc/api-response.md) instance. The 
 ```php
 $projectId = 'project_id6';
 
-$authorization = 'Authorization8';
-
 $voiceAgentVariablesApi = $client->getVoiceAgentVariablesApi();
-$apiResponse = $voiceAgentVariablesApi->mList(
-    $projectId,
-    $authorization
-);
+$apiResponse = $voiceAgentVariablesApi->mList($projectId);
 
 // Extracting response status code
 var_dump($apiResponse->getStatusCode());
@@ -148,11 +138,13 @@ if ($apiResponse->isSuccess()) {
 
 Returns the specified template variable
 
-:information_source: **Note** This endpoint does not require authentication.
-
 ```php
-function get(string $projectId, string $variableId, string $authorization): ApiResponse
+function get(string $projectId, string $variableId): ApiResponse
 ```
+
+## Authentication
+
+This endpoint requires [ApiKeyAuth](../../doc/auth/custom-header-signature.md)
 
 ## Parameters
 
@@ -160,7 +152,6 @@ function get(string $projectId, string $variableId, string $authorization): ApiR
 |  --- | --- | --- | --- |
 | `projectId` | `string` | Template, Required | The unique identifier of the project |
 | `variableId` | `string` | Template, Required | The unique identifier of the agent variable |
-| `authorization` | `string` | Header, Required | Use `Authorization: Token <API_KEY>`<br>Example: `Authorization: Token 12345abcdef` |
 
 ## Response Type
 
@@ -175,13 +166,10 @@ $projectId = 'project_id6';
 
 $variableId = 'variable_id8';
 
-$authorization = 'Authorization8';
-
 $voiceAgentVariablesApi = $client->getVoiceAgentVariablesApi();
 $apiResponse = $voiceAgentVariablesApi->get(
     $projectId,
-    $variableId,
-    $authorization
+    $variableId
 );
 
 // Extracting response status code
@@ -209,16 +197,13 @@ if ($apiResponse->isSuccess()) {
 
 Updates the value of an existing template variable
 
-:information_source: **Note** This endpoint does not require authentication.
-
 ```php
-function update(
-    string $projectId,
-    string $variableId,
-    string $authorization,
-    ?UpdateAgentVariableV1Request $body = null
-): ApiResponse
+function update(string $projectId, string $variableId, ?UpdateAgentVariableV1Request $body = null): ApiResponse
 ```
+
+## Authentication
+
+This endpoint requires [ApiKeyAuth](../../doc/auth/custom-header-signature.md)
 
 ## Parameters
 
@@ -226,7 +211,6 @@ function update(
 |  --- | --- | --- | --- |
 | `projectId` | `string` | Template, Required | The unique identifier of the project |
 | `variableId` | `string` | Template, Required | The unique identifier of the agent variable |
-| `authorization` | `string` | Header, Required | Use `Authorization: Token <API_KEY>`<br>Example: `Authorization: Token 12345abcdef` |
 | `body` | [`?UpdateAgentVariableV1Request`](../../doc/models/update-agent-variable-v1-request.md) | Body, Optional | Updated value for the agent variable |
 
 ## Response Type
@@ -242,13 +226,10 @@ $projectId = 'project_id6';
 
 $variableId = 'variable_id8';
 
-$authorization = 'Authorization8';
-
 $voiceAgentVariablesApi = $client->getVoiceAgentVariablesApi();
 $apiResponse = $voiceAgentVariablesApi->update(
     $projectId,
-    $variableId,
-    $authorization
+    $variableId
 );
 
 // Extracting response status code
@@ -276,11 +257,13 @@ if ($apiResponse->isSuccess()) {
 
 Deletes the specified template variable
 
-:information_source: **Note** This endpoint does not require authentication.
-
 ```php
-function delete(string $projectId, string $variableId, string $authorization): ApiResponse
+function delete(string $projectId, string $variableId): ApiResponse
 ```
+
+## Authentication
+
+This endpoint requires [ApiKeyAuth](../../doc/auth/custom-header-signature.md)
 
 ## Parameters
 
@@ -288,7 +271,6 @@ function delete(string $projectId, string $variableId, string $authorization): A
 |  --- | --- | --- | --- |
 | `projectId` | `string` | Template, Required | The unique identifier of the project |
 | `variableId` | `string` | Template, Required | The unique identifier of the agent variable |
-| `authorization` | `string` | Header, Required | Use `Authorization: Token <API_KEY>`<br>Example: `Authorization: Token 12345abcdef` |
 
 ## Response Type
 
@@ -303,13 +285,10 @@ $projectId = 'project_id6';
 
 $variableId = 'variable_id8';
 
-$authorization = 'Authorization8';
-
 $voiceAgentVariablesApi = $client->getVoiceAgentVariablesApi();
 $apiResponse = $voiceAgentVariablesApi->delete(
     $projectId,
-    $variableId,
-    $authorization
+    $variableId
 );
 
 // Extracting response status code

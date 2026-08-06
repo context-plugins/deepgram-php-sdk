@@ -21,8 +21,8 @@ Request body for creating an agent configuration
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\CreateAgentConfigurationV1RequestBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\CreateAgentConfigurationV1RequestBuilder;
+use DeepgramLib\ApiHelper;
 
 $createAgentConfigurationV1Request = CreateAgentConfigurationV1RequestBuilder::init(
     'config2'

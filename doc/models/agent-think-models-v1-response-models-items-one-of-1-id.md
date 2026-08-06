@@ -17,7 +17,7 @@ The unique identifier of the Anthropic model
 ## Example
 
 ```php
-use RestApiLib\Models\AgentThinkModelsV1ResponseModelsItemsOneOf1Id;
+use DeepgramLib\Models\AgentThinkModelsV1ResponseModelsItemsOneOf1Id;
 
 $agentThinkModelsV1ResponseModelsItemsOneOf1Id = AgentThinkModelsV1ResponseModelsItemsOneOf1Id::CLAUDE35HAIKULATEST;
 ```

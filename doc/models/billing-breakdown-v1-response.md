@@ -20,12 +20,12 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\BillingBreakdownV1ResponseBuilder;
-use RestApiLib\Utils\DateTimeHelper;
-use RestApiLib\Models\Builders\BillingBreakdownV1ResponseResolutionBuilder;
-use RestApiLib\ApiHelper;
-use RestApiLib\Models\Builders\BillingBreakdownV1ResponseResultsItemsBuilder;
-use RestApiLib\Models\Builders\BillingBreakdownV1ResponseResultsItemsGroupingBuilder;
+use DeepgramLib\Models\Builders\BillingBreakdownV1ResponseBuilder;
+use DeepgramLib\Utils\DateTimeHelper;
+use DeepgramLib\Models\Builders\BillingBreakdownV1ResponseResolutionBuilder;
+use DeepgramLib\ApiHelper;
+use DeepgramLib\Models\Builders\BillingBreakdownV1ResponseResultsItemsBuilder;
+use DeepgramLib\Models\Builders\BillingBreakdownV1ResponseResultsItemsGroupingBuilder;
 
 $billingBreakdownV1Response = BillingBreakdownV1ResponseBuilder::init(
     DateTimeHelper::fromSimpleDateRequired('2016-03-13'),

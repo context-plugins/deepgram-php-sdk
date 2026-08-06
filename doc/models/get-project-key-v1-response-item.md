@@ -17,11 +17,11 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\GetProjectKeyV1ResponseItemBuilder;
-use RestApiLib\Models\Builders\GetProjectKeyV1ResponseItemMemberBuilder;
-use RestApiLib\Models\Builders\GetProjectKeyV1ResponseItemMemberApiKeyBuilder;
-use RestApiLib\Utils\DateTimeHelper;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\GetProjectKeyV1ResponseItemBuilder;
+use DeepgramLib\Models\Builders\GetProjectKeyV1ResponseItemMemberBuilder;
+use DeepgramLib\Models\Builders\GetProjectKeyV1ResponseItemMemberApiKeyBuilder;
+use DeepgramLib\Utils\DateTimeHelper;
+use DeepgramLib\ApiHelper;
 
 $getProjectKeyV1ResponseItem = GetProjectKeyV1ResponseItemBuilder::init()
     ->member(

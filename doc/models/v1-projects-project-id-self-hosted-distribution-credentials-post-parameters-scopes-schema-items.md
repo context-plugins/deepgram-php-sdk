@@ -21,7 +21,7 @@
 ## Example
 
 ```php
-use RestApiLib\Models\V1ProjectsProjectIdSelfHostedDistributionCredentialsPostParametersScopesSchemaItems;
+use DeepgramLib\Models\V1ProjectsProjectIdSelfHostedDistributionCredentialsPostParametersScopesSchemaItems;
 
 $v1ProjectsProjectIdSelfHostedDistributionCredentialsPostParametersScopesSchemaItems = V1ProjectsProjectIdSelfHostedDistributionCredentialsPostParametersScopesSchemaItems::ENUM_SELFHOSTEDPRODUCTENGINE;
 ```

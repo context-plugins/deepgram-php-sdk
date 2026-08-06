@@ -22,9 +22,9 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\BillingBreakdownV1ResponseResultsItemsGroupingBuilder;
-use RestApiLib\Utils\DateTimeHelper;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\BillingBreakdownV1ResponseResultsItemsGroupingBuilder;
+use DeepgramLib\Utils\DateTimeHelper;
+use DeepgramLib\ApiHelper;
 
 $billingBreakdownV1ResponseResultsItemsGrouping = BillingBreakdownV1ResponseResultsItemsGroupingBuilder::init()
     ->start(DateTimeHelper::fromSimpleDate('2016-03-13'))

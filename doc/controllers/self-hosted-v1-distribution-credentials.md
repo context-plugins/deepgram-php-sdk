@@ -20,18 +20,19 @@ $selfHostedV1DistributionCredentialsApi = $client->getSelfHostedV1DistributionCr
 
 Lists sets of distribution credentials for the specified project
 
-:information_source: **Note** This endpoint does not require authentication.
-
 ```php
-function mList(string $projectId, string $authorization): ApiResponse
+function mList(string $projectId): ApiResponse
 ```
+
+## Authentication
+
+This endpoint requires [ApiKeyAuth](../../doc/auth/custom-header-signature.md)
 
 ## Parameters
 
 | Parameter | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `projectId` | `string` | Template, Required | The unique identifier of the project |
-| `authorization` | `string` | Header, Required | Use `Authorization: Token <API_KEY>`<br>Example: `Authorization: Token 12345abcdef` |
 
 ## Response Type
 
@@ -44,13 +45,8 @@ This method returns an [`ApiResponse`](../../doc/api-response.md) instance. The 
 ```php
 $projectId = 'project_id6';
 
-$authorization = 'Authorization8';
-
 $selfHostedV1DistributionCredentialsApi = $client->getSelfHostedV1DistributionCredentialsApi();
-$apiResponse = $selfHostedV1DistributionCredentialsApi->mList(
-    $projectId,
-    $authorization
-);
+$apiResponse = $selfHostedV1DistributionCredentialsApi->mList($projectId);
 
 // Extracting response status code
 var_dump($apiResponse->getStatusCode());
@@ -77,24 +73,24 @@ if ($apiResponse->isSuccess()) {
 
 Creates a set of distribution credentials for the specified project
 
-:information_source: **Note** This endpoint does not require authentication.
-
 ```php
 function create(
     string $projectId,
-    string $authorization,
     ?array $scopes = null,
     ?string $provider = V1ProjectsProjectIdSelfHostedDistributionCredentialsPostParametersProvider::QUAY,
     ?CreateProjectDistributionCredentialsV1Request $body = null
 ): ApiResponse
 ```
 
+## Authentication
+
+This endpoint requires [ApiKeyAuth](../../doc/auth/custom-header-signature.md)
+
 ## Parameters
 
 | Parameter | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `projectId` | `string` | Template, Required | The unique identifier of the project |
-| `authorization` | `string` | Header, Required | Use `Authorization: Token <API_KEY>`<br>Example: `Authorization: Token 12345abcdef` |
 | `scopes` | [`?(string(V1ProjectsProjectIdSelfHostedDistributionCredentialsPostParametersScopesSchemaItems)[])`](../../doc/models/v1-projects-project-id-self-hosted-distribution-credentials-post-parameters-scopes-schema-items.md) | Query, Optional | List of permission scopes for the credentials |
 | `provider` | [`?string(V1ProjectsProjectIdSelfHostedDistributionCredentialsPostParametersProvider)`](../../doc/models/v1-projects-project-id-self-hosted-distribution-credentials-post-parameters-provider.md) | Query, Optional | The provider of the distribution service<br><br>**Default**: `V1ProjectsProjectIdSelfHostedDistributionCredentialsPostParametersProvider::QUAY` |
 | `body` | [`?CreateProjectDistributionCredentialsV1Request`](../../doc/models/create-project-distribution-credentials-v1-request.md) | Body, Optional | The set of distribution credentials to create |
@@ -110,14 +106,11 @@ This method returns an [`ApiResponse`](../../doc/api-response.md) instance. The 
 ```php
 $projectId = 'project_id6';
 
-$authorization = 'Authorization8';
-
 $provider = V1ProjectsProjectIdSelfHostedDistributionCredentialsPostParametersProvider::QUAY;
 
 $selfHostedV1DistributionCredentialsApi = $client->getSelfHostedV1DistributionCredentialsApi();
 $apiResponse = $selfHostedV1DistributionCredentialsApi->create(
     $projectId,
-    $authorization,
     null,
     $provider
 );
@@ -147,11 +140,13 @@ if ($apiResponse->isSuccess()) {
 
 Returns a set of distribution credentials for the specified project
 
-:information_source: **Note** This endpoint does not require authentication.
-
 ```php
-function get(string $projectId, string $distributionCredentialsId, string $authorization): ApiResponse
+function get(string $projectId, string $distributionCredentialsId): ApiResponse
 ```
+
+## Authentication
+
+This endpoint requires [ApiKeyAuth](../../doc/auth/custom-header-signature.md)
 
 ## Parameters
 
@@ -159,7 +154,6 @@ function get(string $projectId, string $distributionCredentialsId, string $autho
 |  --- | --- | --- | --- |
 | `projectId` | `string` | Template, Required | The unique identifier of the project |
 | `distributionCredentialsId` | `string` | Template, Required | The UUID of the distribution credentials |
-| `authorization` | `string` | Header, Required | Use `Authorization: Token <API_KEY>`<br>Example: `Authorization: Token 12345abcdef` |
 
 ## Response Type
 
@@ -174,13 +168,10 @@ $projectId = 'project_id6';
 
 $distributionCredentialsId = 'distribution_credentials_id0';
 
-$authorization = 'Authorization8';
-
 $selfHostedV1DistributionCredentialsApi = $client->getSelfHostedV1DistributionCredentialsApi();
 $apiResponse = $selfHostedV1DistributionCredentialsApi->get(
     $projectId,
-    $distributionCredentialsId,
-    $authorization
+    $distributionCredentialsId
 );
 
 // Extracting response status code
@@ -208,11 +199,13 @@ if ($apiResponse->isSuccess()) {
 
 Deletes a set of distribution credentials for the specified project
 
-:information_source: **Note** This endpoint does not require authentication.
-
 ```php
-function delete(string $projectId, string $distributionCredentialsId, string $authorization): ApiResponse
+function delete(string $projectId, string $distributionCredentialsId): ApiResponse
 ```
+
+## Authentication
+
+This endpoint requires [ApiKeyAuth](../../doc/auth/custom-header-signature.md)
 
 ## Parameters
 
@@ -220,7 +213,6 @@ function delete(string $projectId, string $distributionCredentialsId, string $au
 |  --- | --- | --- | --- |
 | `projectId` | `string` | Template, Required | The unique identifier of the project |
 | `distributionCredentialsId` | `string` | Template, Required | The UUID of the distribution credentials |
-| `authorization` | `string` | Header, Required | Use `Authorization: Token <API_KEY>`<br>Example: `Authorization: Token 12345abcdef` |
 
 ## Response Type
 
@@ -235,13 +227,10 @@ $projectId = 'project_id6';
 
 $distributionCredentialsId = 'distribution_credentials_id0';
 
-$authorization = 'Authorization8';
-
 $selfHostedV1DistributionCredentialsApi = $client->getSelfHostedV1DistributionCredentialsApi();
 $apiResponse = $selfHostedV1DistributionCredentialsApi->delete(
     $projectId,
-    $distributionCredentialsId,
-    $authorization
+    $distributionCredentialsId
 );
 
 // Extracting response status code

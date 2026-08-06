@@ -18,8 +18,8 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\ListProjectsV1ResponseProjectsItemsBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\ListProjectsV1ResponseProjectsItemsBuilder;
+use DeepgramLib\ApiHelper;
 
 $listProjectsV1ResponseProjectsItems = ListProjectsV1ResponseProjectsItemsBuilder::init()
     ->projectId('project_id4')

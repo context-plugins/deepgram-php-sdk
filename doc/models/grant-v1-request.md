@@ -17,8 +17,8 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\GrantV1RequestBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\GrantV1RequestBuilder;
+use DeepgramLib\ApiHelper;
 
 $grantV1Request = GrantV1RequestBuilder::init()
     ->ttlSeconds(33.48)

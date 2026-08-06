@@ -22,10 +22,10 @@ Documentation for accessing and setting credentials for JwtAuth.
 You must provide credentials in the client as shown in the following code snippet.
 
 ```php
-use RestApiLib\Authentication\JwtAuthCredentialsBuilder;
-use RestApiLib\RestApiClientBuilder;
+use DeepgramLib\Authentication\JwtAuthCredentialsBuilder;
+use DeepgramLib\DeepgramClientBuilder;
 
-$client = RestApiClientBuilder::init()
+$client = DeepgramClientBuilder::init()
     ->jwtAuthCredentials(
         JwtAuthCredentialsBuilder::init(
             'AccessToken'

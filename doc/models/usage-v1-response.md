@@ -19,10 +19,10 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\UsageV1ResponseBuilder;
-use RestApiLib\Utils\DateTimeHelper;
-use RestApiLib\Models\Builders\UsageV1ResponseResolutionBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\UsageV1ResponseBuilder;
+use DeepgramLib\Utils\DateTimeHelper;
+use DeepgramLib\Models\Builders\UsageV1ResponseResolutionBuilder;
+use DeepgramLib\ApiHelper;
 
 $usageV1Response = UsageV1ResponseBuilder::init()
     ->start(DateTimeHelper::fromSimpleDate('2016-03-13'))

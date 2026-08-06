@@ -16,7 +16,7 @@ Use the latest version of a model
 ## Example
 
 ```php
-use RestApiLib\Models\V1ListenPostParametersVersion0;
+use DeepgramLib\Models\V1ListenPostParametersVersion0;
 
 $v1ListenPostParametersVersion0 = V1ListenPostParametersVersion0::LATEST;
 ```

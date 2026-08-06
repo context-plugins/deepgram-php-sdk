@@ -23,11 +23,11 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\ReadV1ResponseMetadataMetadataBuilder;
-use RestApiLib\Utils\DateTimeHelper;
-use RestApiLib\Models\Builders\ReadV1ResponseMetadataMetadataSummaryInfoBuilder;
-use RestApiLib\ApiHelper;
-use RestApiLib\Models\Builders\ReadV1ResponseMetadataMetadataSentimentInfoBuilder;
+use DeepgramLib\Models\Builders\ReadV1ResponseMetadataMetadataBuilder;
+use DeepgramLib\Utils\DateTimeHelper;
+use DeepgramLib\Models\Builders\ReadV1ResponseMetadataMetadataSummaryInfoBuilder;
+use DeepgramLib\ApiHelper;
+use DeepgramLib\Models\Builders\ReadV1ResponseMetadataMetadataSentimentInfoBuilder;
 
 $readV1ResponseMetadataMetadata = ReadV1ResponseMetadataMetadataBuilder::init()
     ->requestId('000016b8-0000-0000-0000-000000000000')

@@ -19,8 +19,8 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\CreateAgentConfigurationV1ResponseBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\CreateAgentConfigurationV1ResponseBuilder;
+use DeepgramLib\ApiHelper;
 
 $createAgentConfigurationV1Response = CreateAgentConfigurationV1ResponseBuilder::init(
     'agent_id6',

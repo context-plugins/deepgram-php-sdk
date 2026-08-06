@@ -23,8 +23,8 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\ListenV1ResponseResultsUtterancesItemsWordsItemsBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\ListenV1ResponseResultsUtterancesItemsWordsItemsBuilder;
+use DeepgramLib\ApiHelper;
 
 $listenV1ResponseResultsUtterancesItemsWordsItems = ListenV1ResponseResultsUtterancesItemsWordsItemsBuilder::init()
     ->word('word6')

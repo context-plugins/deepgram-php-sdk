@@ -18,8 +18,8 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\SharedTopicsResultsTopicsSegmentsItemsTopicsItemsBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\SharedTopicsResultsTopicsSegmentsItemsTopicsItemsBuilder;
+use DeepgramLib\ApiHelper;
 
 $sharedTopicsResultsTopicsSegmentsItemsTopicsItems = SharedTopicsResultsTopicsSegmentsItemsTopicsItemsBuilder::init()
     ->topic('topic8')

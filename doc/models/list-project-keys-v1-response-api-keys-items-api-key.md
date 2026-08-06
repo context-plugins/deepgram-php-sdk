@@ -20,9 +20,9 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\ListProjectKeysV1ResponseApiKeysItemsApiKeyBuilder;
-use RestApiLib\Utils\DateTimeHelper;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\ListProjectKeysV1ResponseApiKeysItemsApiKeyBuilder;
+use DeepgramLib\Utils\DateTimeHelper;
+use DeepgramLib\ApiHelper;
 
 $listProjectKeysV1ResponseApiKeysItemsApiKey = ListProjectKeysV1ResponseApiKeysItemsApiKeyBuilder::init()
     ->apiKeyId('api_key_id8')

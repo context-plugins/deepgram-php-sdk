@@ -19,8 +19,8 @@ Request body for updating agent configuration metadata
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\UpdateAgentMetadataV1RequestBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\UpdateAgentMetadataV1RequestBuilder;
+use DeepgramLib\ApiHelper;
 
 $updateAgentMetadataV1Request = UpdateAgentMetadataV1RequestBuilder::init(
     [

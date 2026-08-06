@@ -16,7 +16,7 @@ Encoding - mp3. Popular compressed audio format for music and streaming.
 ## Example
 
 ```php
-use RestApiLib\Models\V2SpeakPostParametersEncoding4;
+use DeepgramLib\Models\V2SpeakPostParametersEncoding4;
 
 $v2SpeakPostParametersEncoding4 = V2SpeakPostParametersEncoding4::MP3;
 ```

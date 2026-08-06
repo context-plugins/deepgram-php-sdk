@@ -21,7 +21,7 @@
 ## Example
 
 ```php
-use RestApiLib\Models\V1ListenPostParametersEncoding;
+use DeepgramLib\Models\V1ListenPostParametersEncoding;
 
 $v1ListenPostParametersEncoding = V1ListenPostParametersEncoding::LINEAR16;
 ```

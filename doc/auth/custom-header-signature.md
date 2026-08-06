@@ -22,10 +22,10 @@ Documentation for accessing and setting credentials for ApiKeyAuth.
 You must provide credentials in the client as shown in the following code snippet.
 
 ```php
-use RestApiLib\Authentication\ApiKeyAuthCredentialsBuilder;
-use RestApiLib\RestApiClientBuilder;
+use DeepgramLib\Authentication\ApiKeyAuthCredentialsBuilder;
+use DeepgramLib\DeepgramClientBuilder;
 
-$client = RestApiClientBuilder::init()
+$client = DeepgramClientBuilder::init()
     ->apiKeyAuthCredentials(
         ApiKeyAuthCredentialsBuilder::init(
             'Authorization'

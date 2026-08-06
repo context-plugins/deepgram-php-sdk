@@ -20,8 +20,8 @@ Request body for creating a project invite
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\CreateProjectInviteV1RequestBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\CreateProjectInviteV1RequestBuilder;
+use DeepgramLib\ApiHelper;
 
 $createProjectInviteV1Request = CreateProjectInviteV1RequestBuilder::init(
     'email6',

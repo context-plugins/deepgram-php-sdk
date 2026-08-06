@@ -25,9 +25,9 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\UsageBreakdownV1ResponseResultsItemsGroupingBuilder;
-use RestApiLib\Utils\DateTimeHelper;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\UsageBreakdownV1ResponseResultsItemsGroupingBuilder;
+use DeepgramLib\Utils\DateTimeHelper;
+use DeepgramLib\ApiHelper;
 
 $usageBreakdownV1ResponseResultsItemsGrouping = UsageBreakdownV1ResponseResultsItemsGroupingBuilder::init()
     ->start(DateTimeHelper::fromSimpleDate('2016-03-13'))

@@ -17,12 +17,12 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\ListProjectDistributionCredentialsV1ResponseBuilder;
-use RestApiLib\Models\Builders\ListProjectDistributionCredentialsV1ResponseDistributionCredentialsItemsBuilder;
-use RestApiLib\Models\Builders\ListProjectDistributionCredentialsV1ResponseDistributionCredentialsItemsMemberBuilder;
-use RestApiLib\ApiHelper;
-use RestApiLib\Models\Builders\ListProjectDistributionCredentialsV1ResponseDistributionCredentialsItemsDistributionCredentialsBuilder;
-use RestApiLib\Utils\DateTimeHelper;
+use DeepgramLib\Models\Builders\ListProjectDistributionCredentialsV1ResponseBuilder;
+use DeepgramLib\Models\Builders\ListProjectDistributionCredentialsV1ResponseDistributionCredentialsItemsBuilder;
+use DeepgramLib\Models\Builders\ListProjectDistributionCredentialsV1ResponseDistributionCredentialsItemsMemberBuilder;
+use DeepgramLib\ApiHelper;
+use DeepgramLib\Models\Builders\ListProjectDistributionCredentialsV1ResponseDistributionCredentialsItemsDistributionCredentialsBuilder;
+use DeepgramLib\Utils\DateTimeHelper;
 
 $listProjectDistributionCredentialsV1Response = ListProjectDistributionCredentialsV1ResponseBuilder::init()
     ->distributionCredentials(

@@ -19,25 +19,25 @@ Represents the logging configurations for API calls. Create instance using `Logg
 
 In order to provide custom logger, any implementation of the `Psr\Log\LoggerInterface` can be used so that you can override the `log` behavior and provide its instance directly in the SDK client initialization.
 
-The following example uses `Monolog\Logger` implementation of `Psr\Log\LoggerInterface` for RestApiClient initialization.
+The following example uses `Monolog\Logger` implementation of `Psr\Log\LoggerInterface` for DeepgramClient initialization.
 
 ```php
 <?php
 
-use RestApiLib\RestApiClientBuilder;
-use RestApiLib\Logging\LoggingConfigurationBuilder;
-use RestApiLib\Logging\RequestLoggingConfigurationBuilder;
-use RestApiLib\Logging\ResponseLoggingConfigurationBuilder;
+use DeepgramLib\DeepgramClientBuilder;
+use DeepgramLib\Logging\LoggingConfigurationBuilder;
+use DeepgramLib\Logging\RequestLoggingConfigurationBuilder;
+use DeepgramLib\Logging\ResponseLoggingConfigurationBuilder;
 use Psr\Log\LogLevel;
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
 
 // create a log channel
-$logger = new Logger('RestApi');
+$logger = new Logger('Deepgram');
 $logger->pushHandler(new StreamHandler(__DIR__ . '/api_data.log'));
 
 // initialize the sdk client using this logger
-$client = RestApiClientBuilder::init()
+$client = DeepgramClientBuilder::init()
     ->loggingConfiguration(
         LoggingConfigurationBuilder::init()
             ->logger($logger)

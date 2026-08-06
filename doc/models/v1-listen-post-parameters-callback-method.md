@@ -15,7 +15,7 @@
 ## Example
 
 ```php
-use RestApiLib\Models\V1ListenPostParametersCallbackMethod;
+use DeepgramLib\Models\V1ListenPostParametersCallbackMethod;
 
 $v1ListenPostParametersCallbackMethod = V1ListenPostParametersCallbackMethod::POST;
 ```

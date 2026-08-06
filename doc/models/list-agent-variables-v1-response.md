@@ -17,10 +17,10 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\ListAgentVariablesV1ResponseBuilder;
-use RestApiLib\Models\Builders\AgentVariableV1Builder;
-use RestApiLib\ApiHelper;
-use RestApiLib\Utils\DateTimeHelper;
+use DeepgramLib\Models\Builders\ListAgentVariablesV1ResponseBuilder;
+use DeepgramLib\Models\Builders\AgentVariableV1Builder;
+use DeepgramLib\ApiHelper;
+use DeepgramLib\Utils\DateTimeHelper;
 
 $listAgentVariablesV1Response = ListAgentVariablesV1ResponseBuilder::init()
     ->variables(

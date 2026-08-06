@@ -20,7 +20,7 @@
 ## Example
 
 ```php
-use RestApiLib\Models\V1ProjectsProjectIdUsageBreakdownGetParametersGrouping;
+use DeepgramLib\Models\V1ProjectsProjectIdUsageBreakdownGetParametersGrouping;
 
 $v1ProjectsProjectIdUsageBreakdownGetParametersGrouping = V1ProjectsProjectIdUsageBreakdownGetParametersGrouping::FEATURE_SET;
 ```

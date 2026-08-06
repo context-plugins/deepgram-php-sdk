@@ -20,7 +20,7 @@ Encoding - flac. Supported sample rates - 8000, 16000, 22050, 32000, 48000 Hz.
 ## Example
 
 ```php
-use RestApiLib\Models\V2SpeakPostParametersSampleRate3;
+use DeepgramLib\Models\V2SpeakPostParametersSampleRate3;
 
 $v2SpeakPostParametersSampleRate3 = V2SpeakPostParametersSampleRate3::ENUM_8000;
 ```

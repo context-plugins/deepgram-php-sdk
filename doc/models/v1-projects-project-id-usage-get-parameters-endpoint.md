@@ -17,7 +17,7 @@
 ## Example
 
 ```php
-use RestApiLib\Models\V1ProjectsProjectIdUsageGetParametersEndpoint;
+use DeepgramLib\Models\V1ProjectsProjectIdUsageGetParametersEndpoint;
 
 $v1ProjectsProjectIdUsageGetParametersEndpoint = V1ProjectsProjectIdUsageGetParametersEndpoint::SPEAK;
 ```

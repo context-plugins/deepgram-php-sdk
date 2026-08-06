@@ -20,8 +20,8 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\UsageFieldsV1ResponseModelsItemsBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\UsageFieldsV1ResponseModelsItemsBuilder;
+use DeepgramLib\ApiHelper;
 
 $usageFieldsV1ResponseModelsItems = UsageFieldsV1ResponseModelsItemsBuilder::init()
     ->name('name4')

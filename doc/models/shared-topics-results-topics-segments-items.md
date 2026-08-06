@@ -20,9 +20,9 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\SharedTopicsResultsTopicsSegmentsItemsBuilder;
-use RestApiLib\Models\Builders\SharedTopicsResultsTopicsSegmentsItemsTopicsItemsBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\SharedTopicsResultsTopicsSegmentsItemsBuilder;
+use DeepgramLib\Models\Builders\SharedTopicsResultsTopicsSegmentsItemsTopicsItemsBuilder;
+use DeepgramLib\ApiHelper;
 
 $sharedTopicsResultsTopicsSegmentsItems = SharedTopicsResultsTopicsSegmentsItemsBuilder::init()
     ->text('text0')

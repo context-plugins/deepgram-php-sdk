@@ -16,7 +16,7 @@ Encoding - opus. Supported container - ogg (default).
 ## Example
 
 ```php
-use RestApiLib\Models\V1SpeakPostParametersContainer4;
+use DeepgramLib\Models\V1SpeakPostParametersContainer4;
 
 $v1SpeakPostParametersContainer4 = V1SpeakPostParametersContainer4::OGG;
 ```

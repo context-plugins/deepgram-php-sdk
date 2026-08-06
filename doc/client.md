@@ -23,16 +23,16 @@ The following parameters are configurable for the API Client:
 The API client can be initialized as follows:
 
 ```php
-use RestApiLib\Logging\LoggingConfigurationBuilder;
-use RestApiLib\Logging\RequestLoggingConfigurationBuilder;
-use RestApiLib\Logging\ResponseLoggingConfigurationBuilder;
+use DeepgramLib\Logging\LoggingConfigurationBuilder;
+use DeepgramLib\Logging\RequestLoggingConfigurationBuilder;
+use DeepgramLib\Logging\ResponseLoggingConfigurationBuilder;
 use Psr\Log\LogLevel;
-use RestApiLib\Environment;
-use RestApiLib\Authentication\ApiKeyAuthCredentialsBuilder;
-use RestApiLib\Authentication\JwtAuthCredentialsBuilder;
-use RestApiLib\RestApiClientBuilder;
+use DeepgramLib\Environment;
+use DeepgramLib\Authentication\ApiKeyAuthCredentialsBuilder;
+use DeepgramLib\Authentication\JwtAuthCredentialsBuilder;
+use DeepgramLib\DeepgramClientBuilder;
 
-$client = RestApiClientBuilder::init()
+$client = DeepgramClientBuilder::init()
     ->apiKeyAuthCredentials(
         ApiKeyAuthCredentialsBuilder::init(
             'Authorization'

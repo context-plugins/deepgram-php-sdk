@@ -16,7 +16,7 @@ Encoding - linear16. Supported container - wav (default), or no container.
 ## Example
 
 ```php
-use RestApiLib\Models\V1SpeakPostParametersContainer1;
+use DeepgramLib\Models\V1SpeakPostParametersContainer1;
 
 $v1SpeakPostParametersContainer1 = V1SpeakPostParametersContainer1::WAV;
 ```

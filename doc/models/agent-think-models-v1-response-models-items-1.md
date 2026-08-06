@@ -21,9 +21,9 @@ Anthropic models
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\AgentThinkModelsV1ResponseModelsItems1Builder;
-use RestApiLib\Models\AgentThinkModelsV1ResponseModelsItemsOneOf1Id;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\AgentThinkModelsV1ResponseModelsItems1Builder;
+use DeepgramLib\Models\AgentThinkModelsV1ResponseModelsItemsOneOf1Id;
+use DeepgramLib\ApiHelper;
 
 $agentThinkModelsV1ResponseModelsItems1 = AgentThinkModelsV1ResponseModelsItems1Builder::init(
     AgentThinkModelsV1ResponseModelsItemsOneOf1Id::CLAUDE35HAIKULATEST,

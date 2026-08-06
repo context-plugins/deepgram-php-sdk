@@ -20,18 +20,19 @@ $manageV1ProjectsKeysApi = $client->getManageV1ProjectsKeysApi();
 
 Retrieves all API keys associated with the specified project
 
-:information_source: **Note** This endpoint does not require authentication.
-
 ```php
-function mList(string $projectId, string $authorization, ?string $status = null): ApiResponse
+function mList(string $projectId, ?string $status = null): ApiResponse
 ```
+
+## Authentication
+
+This endpoint requires [ApiKeyAuth](../../doc/auth/custom-header-signature.md)
 
 ## Parameters
 
 | Parameter | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `projectId` | `string` | Template, Required | The unique identifier of the project |
-| `authorization` | `string` | Header, Required | Use `Authorization: Token <API_KEY>`<br>Example: `Authorization: Token 12345abcdef` |
 | `status` | [`?string(V1ProjectsProjectIdKeysGetParametersStatus)`](../../doc/models/v1-projects-project-id-keys-get-parameters-status.md) | Query, Optional | Only return keys with a specific status |
 
 ## Response Type
@@ -45,13 +46,8 @@ This method returns an [`ApiResponse`](../../doc/api-response.md) instance. The 
 ```php
 $projectId = 'project_id6';
 
-$authorization = 'Authorization8';
-
 $manageV1ProjectsKeysApi = $client->getManageV1ProjectsKeysApi();
-$apiResponse = $manageV1ProjectsKeysApi->mList(
-    $projectId,
-    $authorization
-);
+$apiResponse = $manageV1ProjectsKeysApi->mList($projectId);
 
 // Extracting response status code
 var_dump($apiResponse->getStatusCode());
@@ -78,18 +74,19 @@ if ($apiResponse->isSuccess()) {
 
 Creates a new API key with specified settings for the project
 
-:information_source: **Note** This endpoint does not require authentication.
-
 ```php
-function create(string $projectId, string $authorization, ?array $body = null): ApiResponse
+function create(string $projectId, ?array $body = null): ApiResponse
 ```
+
+## Authentication
+
+This endpoint requires [ApiKeyAuth](../../doc/auth/custom-header-signature.md)
 
 ## Parameters
 
 | Parameter | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `projectId` | `string` | Template, Required | The unique identifier of the project |
-| `authorization` | `string` | Header, Required | Use `Authorization: Token <API_KEY>`<br>Example: `Authorization: Token 12345abcdef` |
 | `body` | array\|null | Body, Optional | API key settings |
 
 ## Response Type
@@ -103,13 +100,8 @@ This method returns an [`ApiResponse`](../../doc/api-response.md) instance. The 
 ```php
 $projectId = 'project_id6';
 
-$authorization = 'Authorization8';
-
 $manageV1ProjectsKeysApi = $client->getManageV1ProjectsKeysApi();
-$apiResponse = $manageV1ProjectsKeysApi->create(
-    $projectId,
-    $authorization
-);
+$apiResponse = $manageV1ProjectsKeysApi->create($projectId);
 
 // Extracting response status code
 var_dump($apiResponse->getStatusCode());
@@ -136,11 +128,13 @@ if ($apiResponse->isSuccess()) {
 
 Retrieves information about a specified API key
 
-:information_source: **Note** This endpoint does not require authentication.
-
 ```php
-function get(string $projectId, string $keyId, string $authorization): ApiResponse
+function get(string $projectId, string $keyId): ApiResponse
 ```
+
+## Authentication
+
+This endpoint requires [ApiKeyAuth](../../doc/auth/custom-header-signature.md)
 
 ## Parameters
 
@@ -148,7 +142,6 @@ function get(string $projectId, string $keyId, string $authorization): ApiRespon
 |  --- | --- | --- | --- |
 | `projectId` | `string` | Template, Required | The unique identifier of the project |
 | `keyId` | `string` | Template, Required | The unique identifier of the API key |
-| `authorization` | `string` | Header, Required | Use `Authorization: Token <API_KEY>`<br>Example: `Authorization: Token 12345abcdef` |
 
 ## Response Type
 
@@ -163,13 +156,10 @@ $projectId = 'project_id6';
 
 $keyId = 'key_id4';
 
-$authorization = 'Authorization8';
-
 $manageV1ProjectsKeysApi = $client->getManageV1ProjectsKeysApi();
 $apiResponse = $manageV1ProjectsKeysApi->get(
     $projectId,
-    $keyId,
-    $authorization
+    $keyId
 );
 
 // Extracting response status code
@@ -197,11 +187,13 @@ if ($apiResponse->isSuccess()) {
 
 Deletes an API key for a specific project
 
-:information_source: **Note** This endpoint does not require authentication.
-
 ```php
-function delete(string $projectId, string $keyId, string $authorization): ApiResponse
+function delete(string $projectId, string $keyId): ApiResponse
 ```
+
+## Authentication
+
+This endpoint requires [ApiKeyAuth](../../doc/auth/custom-header-signature.md)
 
 ## Parameters
 
@@ -209,7 +201,6 @@ function delete(string $projectId, string $keyId, string $authorization): ApiRes
 |  --- | --- | --- | --- |
 | `projectId` | `string` | Template, Required | The unique identifier of the project |
 | `keyId` | `string` | Template, Required | The unique identifier of the API key |
-| `authorization` | `string` | Header, Required | Use `Authorization: Token <API_KEY>`<br>Example: `Authorization: Token 12345abcdef` |
 
 ## Response Type
 
@@ -224,13 +215,10 @@ $projectId = 'project_id6';
 
 $keyId = 'key_id4';
 
-$authorization = 'Authorization8';
-
 $manageV1ProjectsKeysApi = $client->getManageV1ProjectsKeysApi();
 $apiResponse = $manageV1ProjectsKeysApi->delete(
     $projectId,
-    $keyId,
-    $authorization
+    $keyId
 );
 
 // Extracting response status code

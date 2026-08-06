@@ -13,12 +13,9 @@ $speakV2AudioApi = $client->getSpeakV2AudioApi();
 
 Synthesize a complete block of text into a single audio response using Deepgram's Flux TTS batch (REST) API. Use this for pre-rendering fixed audio (IVR prompts, notifications, narration) where the whole text is known up front and you don't need incremental playback or interruption.
 
-:information_source: **Note** This endpoint does not require authentication.
-
 ```php
 function generate(
     string $model,
-    string $authorization,
     ?string $callback = null,
     ?string $callbackMethod = V1ListenPostParametersCallbackMethod::POST,
     ?bool $mipOptOut = false,
@@ -32,12 +29,15 @@ function generate(
 ): ApiResponse
 ```
 
+## Authentication
+
+This endpoint requires [ApiKeyAuth](../../doc/auth/custom-header-signature.md)
+
 ## Parameters
 
 | Parameter | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `model` | `string` | Query, Required | Flux TTS model used to synthesize the submitted text, in the form `flux-{voice}-{language}` (for example, `flux-alexis-en`). Required; unlike the v1 (Aura) endpoint there is no default and only flux models are accepted. English-only at launch. |
-| `authorization` | `string` | Header, Required | Use `Authorization: Token <API_KEY>`<br>Example: `Authorization: Token 12345abcdef` |
 | `callback` | `?string` | Query, Optional | URL to which we'll make the callback request |
 | `callbackMethod` | [`?string(V1ListenPostParametersCallbackMethod)`](../../doc/models/v1-listen-post-parameters-callback-method.md) | Query, Optional | HTTP method by which the callback request will be made<br><br>**Default**: `V1ListenPostParametersCallbackMethod::POST` |
 | `mipOptOut` | `?bool` | Query, Optional | Opts out requests from the Deepgram Model Improvement Program. Refer to our Docs for pricing impacts before setting this to true. https://dpgr.am/deepgram-mip<br><br>**Default**: `false` |
@@ -60,8 +60,6 @@ This method returns an [`ApiResponse`](../../doc/api-response.md) instance. The 
 ```php
 $model = 'model2';
 
-$authorization = 'Authorization8';
-
 $callbackMethod = V1ListenPostParametersCallbackMethod::POST;
 
 $mipOptOut = false;
@@ -69,7 +67,6 @@ $mipOptOut = false;
 $speakV2AudioApi = $client->getSpeakV2AudioApi();
 $apiResponse = $speakV2AudioApi->generate(
     $model,
-    $authorization,
     null,
     $callbackMethod,
     $mipOptOut

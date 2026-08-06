@@ -17,12 +17,12 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\ReadV1ResponseMetadataBuilder;
-use RestApiLib\Models\Builders\ReadV1ResponseMetadataMetadataBuilder;
-use RestApiLib\Utils\DateTimeHelper;
-use RestApiLib\Models\Builders\ReadV1ResponseMetadataMetadataSummaryInfoBuilder;
-use RestApiLib\ApiHelper;
-use RestApiLib\Models\Builders\ReadV1ResponseMetadataMetadataSentimentInfoBuilder;
+use DeepgramLib\Models\Builders\ReadV1ResponseMetadataBuilder;
+use DeepgramLib\Models\Builders\ReadV1ResponseMetadataMetadataBuilder;
+use DeepgramLib\Utils\DateTimeHelper;
+use DeepgramLib\Models\Builders\ReadV1ResponseMetadataMetadataSummaryInfoBuilder;
+use DeepgramLib\ApiHelper;
+use DeepgramLib\Models\Builders\ReadV1ResponseMetadataMetadataSentimentInfoBuilder;
 
 $readV1ResponseMetadata = ReadV1ResponseMetadataBuilder::init()
     ->metadata(

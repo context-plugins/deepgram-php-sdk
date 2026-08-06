@@ -17,10 +17,10 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\ListProjectPurchasesV1ResponseBuilder;
-use RestApiLib\Models\Builders\ListProjectPurchasesV1ResponseOrdersItemsBuilder;
-use RestApiLib\Utils\DateTimeHelper;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\ListProjectPurchasesV1ResponseBuilder;
+use DeepgramLib\Models\Builders\ListProjectPurchasesV1ResponseOrdersItemsBuilder;
+use DeepgramLib\Utils\DateTimeHelper;
+use DeepgramLib\ApiHelper;
 
 $listProjectPurchasesV1Response = ListProjectPurchasesV1ResponseBuilder::init()
     ->orders(

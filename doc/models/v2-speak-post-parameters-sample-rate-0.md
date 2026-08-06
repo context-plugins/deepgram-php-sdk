@@ -21,7 +21,7 @@ Encoding - linear16. Supported sample rates - 8000, 16000, 24000, 32000, 44100, 
 ## Example
 
 ```php
-use RestApiLib\Models\V2SpeakPostParametersSampleRate0;
+use DeepgramLib\Models\V2SpeakPostParametersSampleRate0;
 
 $v2SpeakPostParametersSampleRate0 = V2SpeakPostParametersSampleRate0::ENUM_44100;
 ```

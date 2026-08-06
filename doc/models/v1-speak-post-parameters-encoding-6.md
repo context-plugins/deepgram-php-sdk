@@ -16,7 +16,7 @@ Encoding - aac. Advanced audio format offering better quality at smaller file si
 ## Example
 
 ```php
-use RestApiLib\Models\V1SpeakPostParametersEncoding6;
+use DeepgramLib\Models\V1SpeakPostParametersEncoding6;
 
 $v1SpeakPostParametersEncoding6 = V1SpeakPostParametersEncoding6::AAC;
 ```

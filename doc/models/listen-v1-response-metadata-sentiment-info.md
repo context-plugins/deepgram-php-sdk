@@ -19,8 +19,8 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\ListenV1ResponseMetadataSentimentInfoBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\ListenV1ResponseMetadataSentimentInfoBuilder;
+use DeepgramLib\ApiHelper;
 
 $listenV1ResponseMetadataSentimentInfo = ListenV1ResponseMetadataSentimentInfoBuilder::init()
     ->modelUuid('model_uuid4')

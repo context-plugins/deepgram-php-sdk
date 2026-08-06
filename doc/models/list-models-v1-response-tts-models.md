@@ -23,8 +23,8 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\ListModelsV1ResponseTtsModelsBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\ListModelsV1ResponseTtsModelsBuilder;
+use DeepgramLib\ApiHelper;
 
 $listModelsV1ResponseTtsModels = ListModelsV1ResponseTtsModelsBuilder::init()
     ->name('name2')

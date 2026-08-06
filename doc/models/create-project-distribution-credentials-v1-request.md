@@ -19,8 +19,8 @@ Request body for creating distribution credentials
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\CreateProjectDistributionCredentialsV1RequestBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\CreateProjectDistributionCredentialsV1RequestBuilder;
+use DeepgramLib\ApiHelper;
 
 $createProjectDistributionCredentialsV1Request = CreateProjectDistributionCredentialsV1RequestBuilder::init()
     ->comment('comment2')

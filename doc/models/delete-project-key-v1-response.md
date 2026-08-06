@@ -17,8 +17,8 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\DeleteProjectKeyV1ResponseBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\DeleteProjectKeyV1ResponseBuilder;
+use DeepgramLib\ApiHelper;
 
 $deleteProjectKeyV1Response = DeleteProjectKeyV1ResponseBuilder::init()
     ->message('message6')

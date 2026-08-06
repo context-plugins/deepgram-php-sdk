@@ -18,7 +18,7 @@ Method type for the request
 ## Example
 
 ```php
-use RestApiLib\Models\V1ProjectsProjectIdUsageBreakdownGetParametersMethod;
+use DeepgramLib\Models\V1ProjectsProjectIdUsageBreakdownGetParametersMethod;
 
 $v1ProjectsProjectIdUsageBreakdownGetParametersMethod = V1ProjectsProjectIdUsageBreakdownGetParametersMethod::ASYNC;
 ```

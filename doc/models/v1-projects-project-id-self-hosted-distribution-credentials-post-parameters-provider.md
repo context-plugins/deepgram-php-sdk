@@ -14,7 +14,7 @@
 ## Example
 
 ```php
-use RestApiLib\Models\V1ProjectsProjectIdSelfHostedDistributionCredentialsPostParametersProvider;
+use DeepgramLib\Models\V1ProjectsProjectIdSelfHostedDistributionCredentialsPostParametersProvider;
 
 $v1ProjectsProjectIdSelfHostedDistributionCredentialsPostParametersProvider = V1ProjectsProjectIdSelfHostedDistributionCredentialsPostParametersProvider::QUAY;
 ```

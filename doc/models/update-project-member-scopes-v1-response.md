@@ -17,8 +17,8 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\UpdateProjectMemberScopesV1ResponseBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\UpdateProjectMemberScopesV1ResponseBuilder;
+use DeepgramLib\ApiHelper;
 
 $updateProjectMemberScopesV1Response = UpdateProjectMemberScopesV1ResponseBuilder::init()
     ->message('message0')

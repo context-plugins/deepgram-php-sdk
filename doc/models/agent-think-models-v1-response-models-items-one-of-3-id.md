@@ -16,7 +16,7 @@ The unique identifier of the Groq model
 ## Example
 
 ```php
-use RestApiLib\Models\AgentThinkModelsV1ResponseModelsItemsOneOf3Id;
+use DeepgramLib\Models\AgentThinkModelsV1ResponseModelsItemsOneOf3Id;
 
 $agentThinkModelsV1ResponseModelsItemsOneOf3Id = AgentThinkModelsV1ResponseModelsItemsOneOf3Id::ENUM_OPENAIGPTOSS20B;
 ```

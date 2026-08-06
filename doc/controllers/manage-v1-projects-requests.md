@@ -18,12 +18,9 @@ $manageV1ProjectsRequestsApi = $client->getManageV1ProjectsRequestsApi();
 
 Generates a list of requests for a specific project
 
-:information_source: **Note** This endpoint does not require authentication.
-
 ```php
 function mList(
     string $projectId,
-    string $authorization,
     ?\DateTime $start = null,
     ?\DateTime $end = null,
     ?float $limit = 10,
@@ -37,12 +34,15 @@ function mList(
 ): ApiResponse
 ```
 
+## Authentication
+
+This endpoint requires [ApiKeyAuth](../../doc/auth/custom-header-signature.md)
+
 ## Parameters
 
 | Parameter | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `projectId` | `string` | Template, Required | The unique identifier of the project |
-| `authorization` | `string` | Header, Required | Use `Authorization: Token <API_KEY>`<br>Example: `Authorization: Token 12345abcdef` |
 | `start` | `?DateTime` | Query, Optional | Start date of the requested date range. Formats accepted are YYYY-MM-DD, YYYY-MM-DDTHH:MM:SS, or YYYY-MM-DDTHH:MM:SS+HH:MM |
 | `end` | `?DateTime` | Query, Optional | End date of the requested date range. Formats accepted are YYYY-MM-DD, YYYY-MM-DDTHH:MM:SS, or YYYY-MM-DDTHH:MM:SS+HH:MM |
 | `limit` | `?float` | Query, Optional | Number of results to return per page. Default 10. Range [1,1000]<br><br>**Default**: `10` |
@@ -65,14 +65,11 @@ This method returns an [`ApiResponse`](../../doc/api-response.md) instance. The 
 ```php
 $projectId = 'project_id6';
 
-$authorization = 'Authorization8';
-
 $limit = 10;
 
 $manageV1ProjectsRequestsApi = $client->getManageV1ProjectsRequestsApi();
 $apiResponse = $manageV1ProjectsRequestsApi->mList(
     $projectId,
-    $authorization,
     null,
     null,
     $limit
@@ -103,11 +100,13 @@ if ($apiResponse->isSuccess()) {
 
 Retrieves a specific request for a specific project
 
-:information_source: **Note** This endpoint does not require authentication.
-
 ```php
-function get(string $projectId, string $requestId, string $authorization): ApiResponse
+function get(string $projectId, string $requestId): ApiResponse
 ```
+
+## Authentication
+
+This endpoint requires [ApiKeyAuth](../../doc/auth/custom-header-signature.md)
 
 ## Parameters
 
@@ -115,7 +114,6 @@ function get(string $projectId, string $requestId, string $authorization): ApiRe
 |  --- | --- | --- | --- |
 | `projectId` | `string` | Template, Required | The unique identifier of the project |
 | `requestId` | `string` | Template, Required | The unique identifier of the request |
-| `authorization` | `string` | Header, Required | Use `Authorization: Token <API_KEY>`<br>Example: `Authorization: Token 12345abcdef` |
 
 ## Response Type
 
@@ -130,13 +128,10 @@ $projectId = 'project_id6';
 
 $requestId = 'request_id8';
 
-$authorization = 'Authorization8';
-
 $manageV1ProjectsRequestsApi = $client->getManageV1ProjectsRequestsApi();
 $apiResponse = $manageV1ProjectsRequestsApi->get(
     $projectId,
-    $requestId,
-    $authorization
+    $requestId
 );
 
 // Extracting response status code

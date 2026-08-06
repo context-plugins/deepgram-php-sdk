@@ -18,8 +18,8 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\SharedIntentsResultsIntentsSegmentsItemsIntentsItemsBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\SharedIntentsResultsIntentsSegmentsItemsIntentsItemsBuilder;
+use DeepgramLib\ApiHelper;
 
 $sharedIntentsResultsIntentsSegmentsItemsIntentsItems = SharedIntentsResultsIntentsSegmentsItemsIntentsItemsBuilder::init()
     ->intent('intent6')

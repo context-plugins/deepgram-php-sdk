@@ -21,8 +21,8 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\ListProjectMembersV1ResponseMembersItemsBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\ListProjectMembersV1ResponseMembersItemsBuilder;
+use DeepgramLib\ApiHelper;
 
 $listProjectMembersV1ResponseMembersItems = ListProjectMembersV1ResponseMembersItemsBuilder::init()
     ->memberId('member_id0')

@@ -17,7 +17,7 @@
 ## Example
 
 ```php
-use RestApiLib\Models\ListBillingFieldsV1ResponseDeploymentsItems;
+use DeepgramLib\Models\ListBillingFieldsV1ResponseDeploymentsItems;
 
 $listBillingFieldsV1ResponseDeploymentsItems = ListBillingFieldsV1ResponseDeploymentsItems::HOSTED;
 ```

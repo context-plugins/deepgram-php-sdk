@@ -13,11 +13,8 @@ $speakV1AudioApi = $client->getSpeakV1AudioApi();
 
 Convert text into natural-sounding speech using Deepgram's TTS REST API
 
-:information_source: **Note** This endpoint does not require authentication.
-
 ```php
 function generate(
-    string $authorization,
     ?string $callback = null,
     ?string $callbackMethod = V1ListenPostParametersCallbackMethod::POST,
     ?bool $mipOptOut = false,
@@ -32,11 +29,14 @@ function generate(
 ): ApiResponse
 ```
 
+## Authentication
+
+This endpoint requires [ApiKeyAuth](../../doc/auth/custom-header-signature.md)
+
 ## Parameters
 
 | Parameter | Type | Tags | Description |
 |  --- | --- | --- | --- |
-| `authorization` | `string` | Header, Required | Use `Authorization: Token <API_KEY>`<br>Example: `Authorization: Token 12345abcdef` |
 | `callback` | `?string` | Query, Optional | URL to which we'll make the callback request |
 | `callbackMethod` | [`?string(V1ListenPostParametersCallbackMethod)`](../../doc/models/v1-listen-post-parameters-callback-method.md) | Query, Optional | HTTP method by which the callback request will be made<br><br>**Default**: `V1ListenPostParametersCallbackMethod::POST` |
 | `mipOptOut` | `?bool` | Query, Optional | Opts out requests from the Deepgram Model Improvement Program. Refer to our Docs for pricing impacts before setting this to true. https://dpgr.am/deepgram-mip<br><br>**Default**: `false` |
@@ -58,8 +58,6 @@ This method returns an [`ApiResponse`](../../doc/api-response.md) instance. The 
 ## Example Usage
 
 ```php
-$authorization = 'Authorization8';
-
 $callbackMethod = V1ListenPostParametersCallbackMethod::POST;
 
 $mipOptOut = false;
@@ -70,7 +68,6 @@ $speed = 1;
 
 $speakV1AudioApi = $client->getSpeakV1AudioApi();
 $apiResponse = $speakV1AudioApi->generate(
-    $authorization,
     null,
     $callbackMethod,
     $mipOptOut,

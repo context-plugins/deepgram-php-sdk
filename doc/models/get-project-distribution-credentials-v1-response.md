@@ -18,11 +18,11 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\GetProjectDistributionCredentialsV1ResponseBuilder;
-use RestApiLib\Models\Builders\GetProjectDistributionCredentialsV1ResponseMemberBuilder;
-use RestApiLib\ApiHelper;
-use RestApiLib\Models\Builders\GetProjectDistributionCredentialsV1ResponseDistributionCredentialsBuilder;
-use RestApiLib\Utils\DateTimeHelper;
+use DeepgramLib\Models\Builders\GetProjectDistributionCredentialsV1ResponseBuilder;
+use DeepgramLib\Models\Builders\GetProjectDistributionCredentialsV1ResponseMemberBuilder;
+use DeepgramLib\ApiHelper;
+use DeepgramLib\Models\Builders\GetProjectDistributionCredentialsV1ResponseDistributionCredentialsBuilder;
+use DeepgramLib\Utils\DateTimeHelper;
 
 $getProjectDistributionCredentialsV1Response = GetProjectDistributionCredentialsV1ResponseBuilder::init(
     GetProjectDistributionCredentialsV1ResponseMemberBuilder::init(

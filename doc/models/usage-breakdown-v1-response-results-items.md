@@ -24,10 +24,10 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\UsageBreakdownV1ResponseResultsItemsBuilder;
-use RestApiLib\Models\Builders\UsageBreakdownV1ResponseResultsItemsGroupingBuilder;
-use RestApiLib\Utils\DateTimeHelper;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\UsageBreakdownV1ResponseResultsItemsBuilder;
+use DeepgramLib\Models\Builders\UsageBreakdownV1ResponseResultsItemsGroupingBuilder;
+use DeepgramLib\Utils\DateTimeHelper;
+use DeepgramLib\ApiHelper;
 
 $usageBreakdownV1ResponseResultsItems = UsageBreakdownV1ResponseResultsItemsBuilder::init(
     49.58,

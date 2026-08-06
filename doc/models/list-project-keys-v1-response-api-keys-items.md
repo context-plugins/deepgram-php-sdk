@@ -18,11 +18,11 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\ListProjectKeysV1ResponseApiKeysItemsBuilder;
-use RestApiLib\Models\Builders\ListProjectKeysV1ResponseApiKeysItemsMemberBuilder;
-use RestApiLib\ApiHelper;
-use RestApiLib\Models\Builders\ListProjectKeysV1ResponseApiKeysItemsApiKeyBuilder;
-use RestApiLib\Utils\DateTimeHelper;
+use DeepgramLib\Models\Builders\ListProjectKeysV1ResponseApiKeysItemsBuilder;
+use DeepgramLib\Models\Builders\ListProjectKeysV1ResponseApiKeysItemsMemberBuilder;
+use DeepgramLib\ApiHelper;
+use DeepgramLib\Models\Builders\ListProjectKeysV1ResponseApiKeysItemsApiKeyBuilder;
+use DeepgramLib\Utils\DateTimeHelper;
 
 $listProjectKeysV1ResponseApiKeysItems = ListProjectKeysV1ResponseApiKeysItemsBuilder::init()
     ->member(

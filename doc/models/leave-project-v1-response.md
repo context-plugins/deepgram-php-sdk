@@ -17,8 +17,8 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\LeaveProjectV1ResponseBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\LeaveProjectV1ResponseBuilder;
+use DeepgramLib\ApiHelper;
 
 $leaveProjectV1Response = LeaveProjectV1ResponseBuilder::init()
     ->message('message6')

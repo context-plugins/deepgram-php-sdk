@@ -16,7 +16,7 @@ Encoding - mp3. Sample rate is fixed and not configurable (22050 Hz).
 ## Example
 
 ```php
-use RestApiLib\Models\V1SpeakPostParametersSampleRate3;
+use DeepgramLib\Models\V1SpeakPostParametersSampleRate3;
 
 $v1SpeakPostParametersSampleRate3 = V1SpeakPostParametersSampleRate3::ENUM_22050;
 ```

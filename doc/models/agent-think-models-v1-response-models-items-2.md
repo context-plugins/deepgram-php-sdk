@@ -21,9 +21,9 @@ Google models
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\AgentThinkModelsV1ResponseModelsItems2Builder;
-use RestApiLib\Models\AgentThinkModelsV1ResponseModelsItemsOneOf2Id;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\AgentThinkModelsV1ResponseModelsItems2Builder;
+use DeepgramLib\Models\AgentThinkModelsV1ResponseModelsItemsOneOf2Id;
+use DeepgramLib\ApiHelper;
 
 $agentThinkModelsV1ResponseModelsItems2 = AgentThinkModelsV1ResponseModelsItems2Builder::init(
     AgentThinkModelsV1ResponseModelsItemsOneOf2Id::ENUM_GEMINI25FLASH,

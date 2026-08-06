@@ -18,18 +18,19 @@ $manageV1ProjectsMembersApi = $client->getManageV1ProjectsMembersApi();
 
 Retrieves a list of members for a given project
 
-:information_source: **Note** This endpoint does not require authentication.
-
 ```php
-function mList(string $projectId, string $authorization): ApiResponse
+function mList(string $projectId): ApiResponse
 ```
+
+## Authentication
+
+This endpoint requires [ApiKeyAuth](../../doc/auth/custom-header-signature.md)
 
 ## Parameters
 
 | Parameter | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `projectId` | `string` | Template, Required | The unique identifier of the project |
-| `authorization` | `string` | Header, Required | Use `Authorization: Token <API_KEY>`<br>Example: `Authorization: Token 12345abcdef` |
 
 ## Response Type
 
@@ -42,13 +43,8 @@ This method returns an [`ApiResponse`](../../doc/api-response.md) instance. The 
 ```php
 $projectId = 'project_id6';
 
-$authorization = 'Authorization8';
-
 $manageV1ProjectsMembersApi = $client->getManageV1ProjectsMembersApi();
-$apiResponse = $manageV1ProjectsMembersApi->mList(
-    $projectId,
-    $authorization
-);
+$apiResponse = $manageV1ProjectsMembersApi->mList($projectId);
 
 // Extracting response status code
 var_dump($apiResponse->getStatusCode());
@@ -75,11 +71,13 @@ if ($apiResponse->isSuccess()) {
 
 Removes a member from the project using their unique member ID
 
-:information_source: **Note** This endpoint does not require authentication.
-
 ```php
-function delete(string $projectId, string $memberId, string $authorization): ApiResponse
+function delete(string $projectId, string $memberId): ApiResponse
 ```
+
+## Authentication
+
+This endpoint requires [ApiKeyAuth](../../doc/auth/custom-header-signature.md)
 
 ## Parameters
 
@@ -87,7 +85,6 @@ function delete(string $projectId, string $memberId, string $authorization): Api
 |  --- | --- | --- | --- |
 | `projectId` | `string` | Template, Required | The unique identifier of the project |
 | `memberId` | `string` | Template, Required | The unique identifier of the Member |
-| `authorization` | `string` | Header, Required | Use `Authorization: Token <API_KEY>`<br>Example: `Authorization: Token 12345abcdef` |
 
 ## Response Type
 
@@ -102,13 +99,10 @@ $projectId = 'project_id6';
 
 $memberId = 'member_id0';
 
-$authorization = 'Authorization8';
-
 $manageV1ProjectsMembersApi = $client->getManageV1ProjectsMembersApi();
 $apiResponse = $manageV1ProjectsMembersApi->delete(
     $projectId,
-    $memberId,
-    $authorization
+    $memberId
 );
 
 // Extracting response status code

@@ -18,8 +18,8 @@
 ## Example
 
 ```php
-use RestApiLib\Models\Builders\GrantV1ResponseBuilder;
-use RestApiLib\ApiHelper;
+use DeepgramLib\Models\Builders\GrantV1ResponseBuilder;
+use DeepgramLib\ApiHelper;
 
 $grantV1Response = GrantV1ResponseBuilder::init(
     'access_token8'
